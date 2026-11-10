@@ -1,0 +1,11 @@
+# Material de terceros con derechos de autor (no subir)
+Libro Guía - Diplomado Simulación Clínica UC.docx
+endonix.pdf
+*.pdf
+*.docx
+
+# Dependencias y temporales
+node_modules/
+*.log
+.DS_Store
+Thumbs.db

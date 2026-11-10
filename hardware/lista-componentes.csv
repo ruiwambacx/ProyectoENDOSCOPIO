@@ -1,0 +1,11 @@
+cantidad,item,especificacion_provisoria,verificar,proveedor,precio,estado
+2,Modulo AS5600 (encoder magnetico),salida analogica; bolsillo de 25x25 mm en el modelo,medir modulo real y ajustar P.pcb,,,sin cotizar
+2,Iman de neodimio diametral,Ø6 x 2.5 mm,debe ser diametral (no axial),,,sin cotizar
+2,Reserva AS5600 (avance y giro del tubo),igual que arriba,fase posterior,,,sin cotizar
+1,Microcontrolador Seeed XIAO RP2040 o equivalente 3.3 V con >=4 ADC,4 entradas analogicas + USB-C,pines y bahia de 21x17.8 mm,,,sin cotizar
+4,Tornillo M3 x 14 autorroscante,tapa,,,,sin cotizar
+1,Tornillo M3 x 8,apriete del tubo,,,,sin cotizar
+4,Funda PTFE/Bowden Ø ext. ~2.4 mm,asiento Ø2.6 en collar,confirmar con tendon elegido,,,sin cotizar
+2 m,Tendon (acero trenzado o Dyneema),,ensayar,,,sin cotizar
+0.5 m,Cable 4 hilos 28-30 AWG + conectores,>=15 cm de holgura tapa-MCU,,,,sin cotizar
+1,Tubo de prueba Ø12 mm,provisorio,reemplazar por medidas de clinica,,,sin cotizar

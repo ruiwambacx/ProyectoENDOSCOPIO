@@ -1,0 +1,6 @@
+tipo_gasto,partida,descripcion,proveedor,fecha_cotizacion,moneda,cantidad,precio_unitario,envio_impuestos,costo_total,compatibilidad_verificada,alternativa,notas
+desarrollo,,,,,,,,,,,,No hay compras autorizadas (10-nov-2026): rellenar solo con cotizaciones reales
+reproducible_por_unidad,,,,,,,,,,,,Costo unidad = piezas + impresion + ensamblaje + calibracion + consumibles iniciales
+herramienta_reutilizable,,,,,,,,,,,,
+prueba_fallida,,,,,,,,,,,,Registrar material descartado de cada iteracion
+mantenimiento,,,,,,,,,,,,
