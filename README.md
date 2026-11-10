@@ -15,6 +15,7 @@ Proyecto a largo plazo: curso de fundamentos de manipulación bimanual del endos
 | Plan de búsqueda y síntesis | [docs/04](docs/04-plan-busqueda-bibliografica.md), [docs/05](docs/05-sintesis-busqueda-y-decisiones.md) |
 | Búsqueda bibliográfica Q1–Q8 (103 fichas, matriz, referencias) | [busqueda_bibliografica/](busqueda_bibliografica/05_matriz_evidencia.md) |
 | Lista de descarga de papers (ingesta manual) | [busqueda_bibliografica/DESCARGAS.md](busqueda_bibliografica/DESCARGAS.md) |
+| Bitácora de avances | [docs/bitacora/](docs/bitacora/2026-11-10.md) |
 | Ficha de mediciones en la clínica | [docs/mediciones-clinica.md](docs/mediciones-clinica.md) |
 | Hardware: modelo paramétrico, STL, visor 3D | [hardware/](hardware/README.md) |
 | Cómo ver el prototipo sin programar | [hardware/COMO_VER_EN_ONSHAPE.md](hardware/COMO_VER_EN_ONSHAPE.md) |
