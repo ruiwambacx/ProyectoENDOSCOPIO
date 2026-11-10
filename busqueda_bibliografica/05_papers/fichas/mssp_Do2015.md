@@ -1,0 +1,11 @@
+# mssp_Do2015 — Do TN, Tjahjowidodo T, et al., 2015. Nonlinear friction modelling and compensation control of hysteresis phenomena for a pair of tendon-sheath actuated surgical robots. Mech Syst Signal Process [no PubMed, sin PMID]. DOI 10.1016/j.ymssp.2015.01.001
+- Prioritario: no · Lectura: solo abstract (Consensus) · Fuente: Consensus
+- Acceso: DOI https://doi.org/10.1016/j.ymssp.2015.01.001 (doi.org respondió 302 a Elsevier el 2026-11-10; DOI obtenido de Crossref) | PMC: sin PMC | Open access: desconocido | Archivo sugerido: mssp_Do2015.pdf | Licencia: n/a
+- Diseño/tipo: modelo de fricción dinámica + histéresis de backlash para un par de tendón-funda (NOTES); validado en montaje experimental.
+- Hallazgos: el modelo es independiente de la configuración y captura las no linealidades para formas arbitrarias de funda; permite estimar fuerza de fricción para retroalimentación háptica. Sin cifras en el abstract.
+- Limitaciones: solo abstract; sin cifras.
+- Utilidad para el proyecto (1-5): 3 (base para modelar fricción y para háptica futura en el mango).
+- Calidad: revista de ingeniería establecida; moderada (estimación).
+- Frases textuales:
+  - "The proposed models are configuration independent and able to capture the nonlinearities for arbitrary tendon-sheath shapes."
+- Responde a: P19

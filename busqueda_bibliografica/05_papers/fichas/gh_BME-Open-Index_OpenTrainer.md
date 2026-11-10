@@ -1,0 +1,13 @@
+# gh_BME-Open-Index_OpenTrainer — BME-Open-Index, 2026. OpenTrainer (simulador laparoscópico DIY abierto). https://github.com/BME-Open-Index/OpenTrainer [no PubMed, sin PMID]
+- Prioritario: no · Lectura: README + LICENSE.txt (no se abrieron los archivos de diseño) · Fuente: Web
+- Acceso: URL https://github.com/BME-Open-Index/OpenTrainer (accedido 2026-11-10) | DOI: no (el README cita un artículo J Surg Educ 2026, no verificado aquí) | PMC: sin PMC | Open access: sí | Archivo sugerido: n/a | Licencia: **CC BY-SA 4.0** (leída en LICENSE.txt; GitHub la muestra como "Other/NOASSERTION"; el texto aclara "Except where otherwise noted" y lista excepciones de módulos de entrenamiento, no leídas completas)
+- Diseño/tipo: repositorio de hardware abierto (laparoscopia, no endoscopia flexible); carpetas Appendix A BOM, B Design Files, C Assembly, D Videos. Último commit 2026-07-28 (mensaje del commit: Add citation for OpenTrainer research paper, leído vía API de GitHub).
+- Descripción: cuerpo en acrílico cortado a láser, trocares y módulos FLS impresos en 3D, endoscopio industrial por teléfono; costo < USD 150.
+- Hallazgos: ejemplo de publicación con licencia permisiva (SA) de CAD+BOM+ensamblaje; sin mango endoscópico ni tendones.
+- Limitaciones: otro dominio; ShareAlike obliga a compartir derivados con la misma licencia.
+- Utilidad para el proyecto (1-5): 2 (modelo de cómo documentar/licenciar el simulador propio).
+- Calidad: repositorio con paper revisado por pares citado (estimación).
+- Frases textuales:
+  - "OpenTrainer costs less than $150 in materials."
+  - "Except where otherwise noted, all designs, CAD models, software, and documentation in the **OpenTrainer** repository are licensed under the **Creative Commons Attribution-ShareAlike 4.0 International**"
+- Responde a: P18, P21

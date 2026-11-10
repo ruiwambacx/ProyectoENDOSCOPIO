@@ -1,12 +1,12 @@
-# Matriz de evidencia consolidada (Q1–Q4 + verificación de fuentes del documento integral)
+# Matriz de evidencia consolidada (Q1–Q8 + verificación de fuentes del documento integral)
 
-Fecha de búsqueda: 2026-11-10 · Bases: PubMed (conector MCP) y Consensus (solo para descubrir candidatos; todo se verificó en PubMed) · 53 papers con ficha en `05_papers/fichas/` · índice en `05_papers/indice.md` · referencias en `05_referencias.md`.
+Fecha de búsqueda: 2026-11-10 · Bases: PubMed (conector MCP) y Consensus (solo para descubrir candidatos; todo se verificó en PubMed) · 103 fuentes con ficha en `05_papers/fichas/` (96 PubMed + 7 no PubMed) · texto fuente en `05_papers/texto/` · índice `05_papers/indice.md` · referencias `05_referencias.md` · **lista de descarga `DESCARGAS.md`**.
 
 **Advertencias de método (leer primero)**
-1. **Lectura:** solo 6 de 53 papers se leyeron a texto completo (PMC). El resto es **solo abstract**; no se tratan como lectura completa. Los prioritarios sin PMC (GAGES, GiECAT, ACE, Khan 2021, Ward 2014/2016, Wang 2025, Grover 2015) requieren que consigas el PDF.
-2. **Verificación de frases textuales:** se copiaron del abstract/texto devuelto por el conector y se compararon a mano; **no** se verificaron mecánicamente contra un archivo (no se guardaron los textos). Pendiente: pasada de verificación mecánica.
+1. **Lectura:** solo una minoría de las 103 fuentes se leyó a texto completo (PMC; ver total en `05_papers/indice.md`). El resto es **solo abstract**; no se trata como lectura completa. Los prioritarios sin PMC (GAGES, GiECAT, ACE, Khan 2021, Ward 2014/2016, Wang 2025, Grover 2015) requieren que consigas el PDF.
+2. **Verificación de frases textuales:** las 100 frases de las 53 fichas de Q1–Q4/E fueron verificadas mecánicamente contra el texto guardado (83 contra el abstract, 17 contra texto completo PMC; ver `05_papers/verificacion_frases.md`). Las fichas de Q5–Q8 fueron verificadas por script por sus agentes contra `texto/<ID>.txt`; **las líneas "Responde también a" añadidas a fichas preexistentes no se re-verificaron**.
 3. **Calidad:** los juicios MERSQI / COSMIN / Newcastle-Ottawa / RoB 2 y los niveles Oxford son **estimaciones preliminares desde el abstract**, no puntuaciones formales.
-4. **Cribado parcial:** las búsquedas devuelven solo PMIDs; varias cadenas (>450 registros en Q3, y las cadenas amplias de Q1 y Q2) se cribaron solo en parte. **No es una revisión exhaustiva.** La cadena de Q1 es ruidosa porque PubMed expande "ACE"/"DOPS" a términos farmacológicos.
+4. **Cribado parcial:** las búsquedas devuelven solo PMIDs; varias cadenas (>450 registros en Q3, cadenas amplias de Q1, Q2, Q6, Q7, Q8) se cribaron solo en parte, a menudo vía Consensus y luego verificación en PubMed. **No es una revisión exhaustiva.** La cadena de Q1 es ruidosa porque PubMed expande "ACE"/"DOPS" a términos farmacológicos.
 5. **Incidente:** una carrera entre agentes sobrescribió dos fichas (19802776, 22726473); se repararon con las líneas "Responde a" correspondientes, pero **el contenido original de esas dos fichas pudo perderse**: revisarlas antes de citar.
 
 ## Síntesis por pregunta
@@ -39,6 +39,32 @@ Fecha de búsqueda: 2026-11-10 · Bases: PubMed (conector MCP) y Consensus (solo
 - **Contra**: Forbes 2016 y Ekkelenkamp 2016: el número de procedimientos es un marcador insuficiente; Koch no separa experimentados de expertos (4:19 vs 4:56); Tang 2017: 1 de 3 fellows alcanzó competencia por CUSUM.
 - **P17 (publicación UC sobre DOPS 33→4 ítems y plateau 90–100): NO encontrada** (búsquedas por autor, afiliación, tema y en español, PubMed y Consensus). Único hallazgo UC cercano: Varas 2012 (PMID 22733192), que trata transferencia laparoscópica, no es la publicación buscada. Posibles causas: tesis, libro o revista no indexada. **Acción: pedirle la referencia exacta al docente/libro.** Mientras tanto, citar el dato 90–100 solo como "comunicación del libro guía".
 
+### Q5 — Diseños de mango, tendones y puntas de bajo costo (P18–P21)
+- **No se halló ningún repositorio abierto de mango y ruedas de endoscopio flexible.** Existen mangos impresos publicados (Endonix, HelicoFlex, Heisterberg 2025) y un simulador de colonoscopia de US$62,77 (ROSCO, King 2016), pero ninguno publica CAD del mango. Punta continua impresa de Scott 2024 (arXiv): 4 mm × 20 mm, AUD 252,28.
+- **Fricción tendón-funda domina la histéresis**: Kato 2015 (error 2,89 y 3,87 mm); Zhang 2023 (histéresis con curvaturas de 180° y 360°; mejora 25,5 % y 43,9 % sobre Bouc-Wen); Shen 2026 (error de punta de 36,11 a 9,42 mm). **No hay cifras de fuerza de tendón ni de vida útil** en las fuentes incluidas.
+- **Sensado de ruedas**: encoders ópticos (Dargar 2013) y sensado absoluto+incremental (patente KeyMed GB2409326A, expirada). Johnson 2021 sensa la punta con Leap Motion (~US$100), no las ruedas. **No hay literatura sobre AS5600/Hall/potenciómetro** en este contexto: nuestra elección de AS5600 queda sin respaldo bibliográfico propio y debe validarse en banco.
+- **Licencias (P21)**: OpenTrainer (laparoscopia) CC BY-SA 4.0 (leído en su LICENSE); MacroMicroSurgicalRobot y Friction-TDCR-Tension **sin licencia declarada → no reutilizables sin permiso**; ROSCO, Endonix y HelicoFlex sin licencia verificada.
+- **Limitación**: no se consultaron IEEE Xplore, Scopus, Printables, Thingiverse ni OSHWA; la API de GitHub alcanzó su límite (8 de 14 búsquedas). Faltan por leer los textos completos de Kato, Dragone y Culmone 2020. **No es un inventario exhaustivo.**
+
+### Q6 — Gamificación, retroalimentación automatizada y práctica distribuida (P22–P24)
+- **Gamificación (P22)**: evidencia mixta, de bajo nivel y casi toda fuera de endoscopia digestiva. A favor: leaderboard de velocidad ↑ uso voluntario (44 % vs 4 %) y velocidad (194 vs 233 s) pero cohorte histórica; barras de progreso +1,5 puntos (+2,5 en retención a 2,5 meses, n=24). Nulo/adverso: Vernier 2026 (n=60) sin beneficio; el feedback gamificado solo negativo (Karim 2025) desalentó la práctica. **Riesgos de validez**: rankings por velocidad premian la métrica y no la calidad; experiencia con videojuegos (+1,4 puntos) y sexo (37,6 vs 19,7 en Vilmann) añaden varianza irrelevante. **No hay ECA con resultados de gamificación en endoscopia** (solo el protocolo de Scaffidi 2019).
+- **Feedback automatizado vs tutor (P23)**: Vilmann 2018 (colonoscopia): puntaje de progresión +14,4 puntos (IC95 % 1,2–27,6) vs sin feedback, con más tiempo de práctica; Su 2025 (broncoscopia): tutor superior (p=0,026) y la guía VR no superó al control; Snyder 2010: retención similar a 4,5 meses (n=13). Sin evidencia de feedback por IA/video en endoscopia flexible.
+- **Práctica distribuida (P24)**: Jørgensen 2024 (RS): 15 de 19 estudios favorecen lo distribuido y ninguno lo masivo; recomienda una sesión al día de ≤2 h. Spruit 2014: 3×75 min semanales > masivo (65 % vs 21 % proficiencia; ventaja a 2 semanas y 1 año). Tang 2023: sin diferencia entre intervalos de 1–2 y 6–8 días. **El piloto propuesto (6 sesiones de 45–60 min, retención a 2–4 semanas) cae dentro del rango respaldado**, pero la evidencia viene de laparoscopia, broncoscopia y microcirugía, no de endoscopia digestiva flexible.
+- Candidatos sin PMID verificado (no incluidos): Mikoto (Olabintan 2025, Vamadevan 2026, Yamaguchi 2026), LearnEndo.
+
+### Q7 — Transferencia al paciente y retención (P25–P27)
+- **La simulación mejora el desempeño temprano frente a no entrenar** (Cochrane 2025: independencia RR 1,62, IC95 % 1,15–2,26, certeza moderada; Singh 2014: conducta clínica ES 0,49, tiempo ES 0,75) **pero no reemplaza el entrenamiento en pacientes** (RR 0,45, certeza baja). Cohen 2006: ventaja en los primeros 80–100 casos, con 160 casos a 90 % de competencia en ambos grupos (**razón de acortamiento ≈1**). Qiao 2014 (colonoscopia): sin beneficio (RR 1,10; IC95 % 0,88–1,37). Ferlitsch 2010 (EGD): 239 vs 310 s al duodeno en las primeras 10 EGD.
+- **P26: no se halló ningún ECA de transferencia a paciente real con simulador físico de bajo costo en EGD o colonoscopia**; casi toda la evidencia en pacientes es VR. Mascagni 2022 (BEST vs VR) solo en FES y ex vivo (+25,16 vs +25,58; p=0,89). Kulcheski 2026 (sintético de US$90) muestra transferencia a cirugía real, pero en **endoscopia espinal**.
+- **P27**: único dato de retención en colonoscopia: Snyder 2010 (mediana 10 vs 10 a 4,5 meses, n=13, mismo simulador VR). Transferencia cercana: Riek 2017, De Win 2013 (sutura laparoscópica, 1 y 6 meses), Cassidy 2022 (animal vivo).
+- Cribado parcial: pueden existir ECA no capturados. No se localizó la Cochrane 2012/2018 con PMID propio; no hay versión endoscópica de Boza/UC.
+
+### Q8 — Cut-offs, tamaño muestral, confiabilidad y marcos (P28–P31)
+- **Standard setting (P28)**: el método más usado en simulación quirúrgica es la media/mediana de experimentados (65/162 estudios, 40 %; evidencia baja–moderada, Pietersen 2021). Precedente directo en endoscopia flexible: FES (Vassiliou 2013, n=160, grupos contrastantes + ROC; sensibilidad 0,81, 1-especificidad 0,21). Con n pequeño los falsos positivos/negativos observados son inestables (Jørgensen 2018: FP observado 9,1 % vs teórico 2,7 %); **reportar también los teóricos**. Borderline exige n grande; Angoff es una familia de variantes. Para el estándar tras el curso, Yudkowsky 2015 recomienda criterios conjuntivos de seguridad.
+- **Tamaño muestral (P29)**: media de práctica de 37 sujetos/estudio, unicéntrico (Van Nortwick 2010; 83 estudios). En endoscopia simulada: n=24 (8/8/8, Jaensch), 35 (15/10/10, Nielsen), 160 (FES). **No hay fórmula validada de tamaño muestral para validación de constructo en la literatura recuperada**; el cálculo propio queda para stats-agent. Jaensch: experto vs intermedio p=0,40 con n=8 por grupo.
+- **Confiabilidad (P30)**: reportar forma del ICC (modelo, tipo, definición) con IC95 % y umbrales 0,5/0,75/0,9 (Koo & Li 2016); usar G-study/D-study para decidir evaluadores y ensayos (Bloch & Norman 2012). Cifras halladas: 6 casos para fiabilidad >0,7 y 10 para >0,8 (Sun 2026, broncoscopia flexible); test–retest ICC 0,85 con n=11 (FES). **No hay G-study con evaluadores humanos de GAGES/OSATS en endoscopia.**
+- **Marcos y reporte (P31)**: Messick (5 fuentes) y Kane (4 inferencias; "implicaciones" es la clave para el corte); 8 pasos de Cook & Hatala 2016; solo 6,6 % de 498 estudios quirúrgicos usó Messick (Borgersen 2018). Reporte: CONSORT y STROBE más las extensiones de simulación de Cheng 2016 (11 y 10 ítems; hay una versión duplicada en PMC: citar una sola).
+- Candidatos sin PMID verificado: Hofstee/borderline regression (Dwyer 2016, Tappan 2025, Allahyari 2026), GRRAS (Kottner 2011); los *Standards for Educational and Psychological Testing* (AERA/APA/NCME) van como [no PubMed, sin PMID].
+
 ### Verificación de las fuentes E1–E8 del documento integral
 Las 8 fuentes y Ward 2016 **existen y los PMID/DOI/revista/año coinciden**; ninguna cifra citada por el documento integral fue contradicha por PubMed (detalle en la tabla de la sección E, abajo). Matices a corregir en el documento integral:
 - **E7 (SPRINT, Siau 2020)** es un **estudio de casos y controles no aleatorizado** (15 casos / 24 controles), no un ECA.
@@ -49,15 +75,15 @@ Las 8 fuentes y Ward 2016 **existen y los PMID/DOI/revista/año coinciden**; nin
 - E1 (ESGE/ESGENA 2024): PMID 38040025; el abstract no trae umbrales numéricos.
 
 ## Cobertura
-- 53 papers: 25 prioritarios; 6 con texto completo; años 1995–2026, con mayoría 2007–2025.
+- 103 fuentes (96 PubMed + 7 no PubMed): 49 prioritarias; años 1995–2026, con mayoría 2007–2025.
 - **Bien cubierto:** instrumentos para colonoscopia, curvas de aprendizaje EGD/colonoscopia, simuladores VR y físicos de colonoscopia, métricas de movimiento (laparoscopia sobre todo).
 - **Mal cubierto / vacíos:** validez de constructo de simuladores físicos **de gastroscopia**; GAGES aplicado a video de simulador; confiabilidad test–retest de GAGES; métricas de ruedas/angulación; el estudio UC (P17); recomendaciones de volumen mínimo ASGE/ESGE/JAG leídas de forma directa; transferencia con simuladores físicos de bajo costo (no era el foco de Q1–Q4).
 - **Instrumentos más usados:** DOPS, ACE, GiECAT, GAGES, OSATS (en simuladores de otras especialidades).
-- **Recomendación:** búsqueda **no completa**. Siguiente pasada: (1) verificar mecánicamente las frases textuales; (2) obtener PDFs de los prioritarios sin PMC; (3) cribar las cadenas que quedaron sin revisar; (4) Q5–Q8; (5) pasada específica sobre GAGES (definición de grupos, test–retest) y sobre ACE-EGD.
+- **Recomendación:** búsqueda **no completa**. Siguiente pasada: (1) verificar mecánicamente las frases textuales; (2) obtener PDFs de los prioritarios sin PMC; (3) cribar las cadenas que quedaron sin revisar; (4) leer los PDFs de la lista `DESCARGAS.md`; (5) completar Q5 con IEEE Xplore/Scopus/Printables/OSHWA; (6) pasada específica sobre GAGES (definición de grupos, test–retest) y sobre ACE-EGD.
 
 ---
 
-# Anexo 1 — Matriz detallada Q1
+# Anexo — Matriz detallada Q1
 
 # Matriz parcial Q1 — Instrumentos de evaluación (P1–P6)
 
@@ -132,6 +158,7 @@ Notas: PubMed expande "ACE" y "DOPS" a términos no relacionados; las cadenas 7 
 - Todos los demás: solo abstract de PubMed (sin PMC). Las fichas lo indican como "solo abstract".
 - Las frases textuales fueron copiadas de la salida del conector (abstract/texto) y verificadas por comparación directa en esta sesión; no se guardaron los abstracts en archivo, por lo que no se ejecutó una búsqueda automática de cadenas.
 - Papers considerados y NO incluidos por límite de espacio: 29614526 (Siau 2018, cambio de escala DOPS), 30216204 (Siau 2018, DOPS gastroscopia pediátrica), 24590220 (GiECAT Kids, Delphi), 35146554 (Cassidy 2022, GAGES en ECA con RV), 32719238 (Azzam 2020, SESAS vs DOPS kappa 0.90), 30604259 (Habaz 2019, BEST box primeros 100), 31895706 (comentario editorial; no empírico), 36374304 (revisión DOPS quirúrgico general).
+
 
 ---
 
@@ -216,6 +243,7 @@ Superadas (no incluidas con ficha): Cochrane 2018, PMID 30117156 / DOI 10.1002/1
 | Portátil bajo costo (Cepek 2022) | VR + controlador Bluetooth | "low-cost" sin cifra | 10 tareas básicas | 4 expertos / 4 novatos | Tiempo | Sin diferencia expertos vs novatos | n=8; urología |
 | Cistoscopia baja fidelidad (Llorente-Ortega 2023) | Físico bajo costo | No declarado | 2 tareas + OSATS | 5 expertos / 19 no expertos | Tiempo, OSATS | Diferencia p<0.05 | Urología |
 
+
 ---
 
 # Anexo — Matriz detallada Q3
@@ -287,6 +315,7 @@ Nota: la búsqueda Consensus de ICSAD/Datta falló por rate limit y se reemplaz�
 | Fuerza máxima | Fuerza pico sobre el modelo | Sensor de fuerza del modelo | Menor en expertos | Plooy 22726473 | Mixto (2 de 4 casos) |
 | Bucles (sigmoides) | Número y tamaño de bucles N, tiempo para resolver alfa | Software Olympus | Menores en expertos | Haycock 19802776 | Sí (p=0,01-0,02) |
 | Uso de ruedas/angulación; manipulación bimanual | Deflexión de ruedas; coordinación entre manos | Encoders/potenciómetros (propuesto) | Sin evidencia verificada | Ninguno con PMID verificado | Sin dato |
+
 
 ---
 
@@ -367,6 +396,298 @@ Fecha de búsqueda: 2026-11-10. Fuentes: PubMed (conector MCP; PMID/DOI verifica
 | Tang 2017 | Colonoscopia | solo 1/3 alcanzó competencia | Intubación cecal independiente (CUSUM) | 3 fellows, 203 |
 | Walsh 2015 | Colonoscopia (grupos) | novato <50 / interm. 50-500 / exp. >1000 | Discriminación GiECAT | 61 endoscopistas |
 | Koch 2008 | Colonoscopia VR (grupos) | <200 / 200-1000 / >1000 | Tiempo al ciego, pérdida de lumen | 105 |
+
+
+---
+
+# Anexo — Matriz detallada Q5
+
+# Matriz parcial Q5 — Mango, tendones y puntas articuladas de bajo costo / impresas en 3D (P18–P21)
+Fecha de búsqueda y acceso: 2026-11-10. Fuentes: PubMed (MCP), Consensus (plan gratuito, sin DOI en resultados), alphaXiv, WebSearch/WebFetch, API pública de GitHub y Crossref (solo para resolver DOI de fuentes no PubMed; luego se comprobó que doi.org responde 302).
+Convención: PubMed = PMID y DOI del conector. No PubMed = etiqueta "[no PubMed, sin PMID]" + URL/DOI + fecha de acceso.
+
+## Queries usadas
+| # | Base | Cadena | Resultados |
+|---|---|---|---|
+| 1 | PubMed | (endoscope OR colonoscope OR endoscopic) AND ("tendon-driven" OR "bending section" OR "3D printed" OR "3D-printed") AND (design OR prototype OR low-cost) | 268 (solo 20 PMIDs devueltos; no cribados) |
+| 2 | PubMed | (endoscopy simulator) AND (encoder OR potentiometer OR "hall sensor" OR "motion tracking" OR "force feedback") | 171 (20 PMIDs; los 2 revisados no eran pertinentes: 42816304 urología CFD; 42742770 háptica robótica) |
+| 3 | PubMed | (endoscope OR colonoscope) AND ("tendon-driven" OR "bending section" OR "continuum" OR "articulating tip") AND (low-cost OR "3D-printed" OR prototype) | 19 (15 PMIDs devueltos; se revisaron los 3 primeros) |
+| 4 | PubMed | (flexible endoscopy OR colonoscopy OR gastroscopy) AND (low-cost OR 3D-printed OR homemade) AND (simulator OR training model) AND (handle OR sensor OR open-source) | 16 (15 PMIDs; solo 26905575 ya fichado en Q2) |
+| 5 | PubMed | (endoscope OR colonoscope OR bronchoscope) AND (simulator OR training) AND (rotary encoder OR potentiometer OR "Hall effect" OR "magnetic sensor" OR "optical sensor") AND (angulation OR dial OR knob OR handle) | 0 |
+| 6 | PubMed | búsquedas dirigidas (Culmone steerable 3D printed; Kato tendon-driven neuroendoscopy; control devices ergonomics; VTEST optical encoders) | 3 / 1 / 1 / 1 |
+| 7 | Consensus | tendon-driven continuum robot friction hysteresis curved sheath endoscope | 10 |
+| 8 | alphaXiv | tendon friction hysteresis ... curved sheath, low-cost open-source endoscope designs | 15 (2605.16870 SSTL, 2603.19124 TPU backbone, 2610.19798 plataforma de actuación; **no abiertos**, solo listados) |
+| 9 | WebSearch (x4) | github 3D printed endoscope handle simulator...; open-source low-cost colonoscopy simulator STL license; Printables/Thingiverse steerable endoscope handle; endoscope simulator wheel angulation encoder potentiometer | ~10 resultados c/u |
+| 10 | API GitHub (repos) | endoscope simulator 3d print; tendon driven continuum 3d printed; colonoscopy simulator; endoscope handle tendon; bronchoscope simulator, etc. | 8 de 14 consultas respondieron (resto rate-limit); hallazgos relevantes: OpenTrainer; repos no relevantes descartados |
+Limitaciones: sin acceso a IEEE Xplore/Scopus/Printables/Thingiverse (no se pudieron consultar); GitHub sin autenticación; no se encontró ningún repositorio de mango/ruedas de endoscopio flexible.
+
+## Tabla Pregunta | Fuente | ID/DOI/URL | Qué responde | Frase textual | Calidad | Verificado en | Sección destino
+| Pregunta | Fuente | ID / DOI / URL | Qué responde | Frase textual | Calidad | Verificado en | Sección destino |
+|---|---|---|---|---|---|---|---|
+| P18 | Culmone 2020 (PubMed) | PMID 32407397 / 10.1371/journal.pone.0232952 | Mango + eje totalmente impresos (3 piezas, 10 GDL) | "A prototype called the HelicoFlex was built using only three 3D printed parts." | Prototipo; moderada | Abstract | Diseño mango v0.2 |
+| P18 | Culmone 2022 (PubMed) | PMID 36194613 / 10.1371/journal.pone.0275535 | Cables paralelos preferidos por 10/12 usuarios | "10 out of 12 participants preferred the parallel configuration due to a more intuitive hand movement..." | ECA n=12; baja-moderada | Abstract | Diseño mango |
+| P18, P20 | Heisterberg 2025 (PubMed) | PMID 40196841 / 10.3389/frobt.2025.1559574 | Carcasas PLA + Arduino Micro HID; joystick sustituye ruedas | "An Arduino Micro board (Arduino S. r.l., Monza, Italy) was used to read and process signals from the interface elements." | Usabilidad; baja-moderada | Texto completo PMC11973676 | Diseño mango / electrónica |
+| P18 | King 2016 ROSCO (ficha Q2) | PMID 26905575 / 10.1007/s00464-016-4824-y | Simulador físico open source costo USD 62,77 | "Our simulator requires no advanced expertise, costs $62.77 US, and weighs 8.5 pounds." | Validación constructo; moderada | Abstract | Posicionamiento |
+| P18, P20 | Hohlstein 2025 Endonix (ficha Q2) | PMID 41345533 / 10.1007/s00464-025-12396-8 | Mango endoscópico 3D impreso por USB; sensor y licencia no descritos | "The Endonix® virtual endoscopy simulator consists of a 3D-printed endoscope handle that can be plugged into a computer." | Validación n=310; moderada | Texto completo (ficha Q2) | Posicionamiento |
+| P18, P19 | Scott 2024 | arXiv 2405.16084 [no PubMed, sin PMID] https://arxiv.org/abs/2405.16084 | Punta continua 4 mm x 20 mm, poleas FDM, costo AUD 252,28, CAD abierto | "The estimated total cost of the micro manipulator assembly is $252.28 AUD." | Prototipo; baja-moderada | Texto completo alphaXiv | Diseño punta |
+| P19 | Kato 2015 (PubMed) | PMID 26476639 / 10.1007/s11548-015-1310-2 | Tendones = principal factor de histéresis; error 2,89 / 3,87 mm | "The tendons were the most predominant factor affecting the hysteresis operation of the robot." | Banco; moderada | Abstract | Diseño punta / banco |
+| P19 | Zhang 2023 TMRB | DOI 10.1109/tmrb.2023.3249234 [no PubMed, sin PMID] | Histéresis tendón-funda con curvatura 180°/360°; -25,5 % y -43,9 % de error | "...on the two TSMs with different accumulated curvatures of 180° and 360°." | Banco; moderada | Abstract (Consensus) | Banco de fricción |
+| P19 | Do 2015 MSSP | DOI 10.1016/j.ymssp.2015.01.001 [no PubMed, sin PMID] | Modelo de fricción dinámica y backlash para formas arbitrarias de funda | "The proposed models are configuration independent and able to capture the nonlinearities for arbitrary tendon-sheath shapes." | Moderada | Abstract (Consensus) | Banco de fricción |
+| P19 | Shen 2026 RAL + repo | DOI 10.1109/lra.2026.3688094 [no PubMed, sin PMID]; https://github.com/Jia0Shen/Friction-TDCR-Tension | Error de punta 36,11 -> 9,42 mm con modelo Capstan-LCP | "...a reduction of tip position error from 36.11 mm in conventional sliding friction models to 9.42 mm for a 402-mm-long robot." | Moderada | Abstract (Consensus) | Banco de fricción |
+| P19, P20 | Dragone 2023 (PubMed) | PMID 37763906 / 10.3390/mi14091743 | Punta 3D 5,5 mm, Bowden, sensado optoelectrónico | "A prototype of the manipulator with a length of 43 mm and a diameter of 5.5 mm has been realized via 3D printing." | Baja-moderada | Abstract | Diseño punta |
+| P20 | Dargar 2013 (PubMed) | PMID 23400138 / sin DOI en PubMed | Encoders ópticos rotacionales para medir las ruedas | "We have developed an accurate and high resolution optical encoder based system to measure that dial manipulations..." | Baja | Abstract | Sensado de ruedas |
+| P20 | Johnson 2021 (ficha Q3) | PMID 34725623 / 10.7759/cureus.18379 | Punta sensada ópticamente con Leap Motion (~USD 100), sin sensor de rueda | "The Leap Motion controller is designed to optically detect hand position to allow its use in motion-controlled software applications." | Validación n=24; moderada | Texto completo PMC8553393 | Sensado |
+| P20, P21 | KeyMed GB2409326A [no PubMed, sin PMID] | https://patents.google.com/patent/GB2409326A/en (accedido 2026-11-10) | Detector absoluto de baja resolución + encoder incremental por cable; patente expirada | "the position of the or each angulation cable is sensed by a combination of a low resolution absolute position detector" | Patente; n/a | Extractos de la página | Sensado |
+| P18, P21 | OpenTrainer [no PubMed, sin PMID] | https://github.com/BME-Open-Index/OpenTrainer | Modelo de repositorio abierto con BOM/CAD; CC BY-SA 4.0 (laparoscopia) | "OpenTrainer costs less than $150 in materials." | Repo con paper; n/a | README + LICENSE.txt | Licencias |
+| P18, P21 | MacroMicroSurgicalRobot [no PubMed, sin PMID] | https://github.com/drliaowu/MacroMicroSurgicalRobot | STL de punta + PartsList.pdf; sin licencia declarada | "ROS package providing simultaneous teleoperation of a custom micro-manipulator and a Universal Robots UR5e robotic arm via a 3D Systems Touch haptic stylus." | Repo académico | README + API | Licencias |
+
+## Tabla de diseños abiertos (P18, P21)
+| Nombre | URL | Licencia (leída) | Qué incluye | Último commit | Reutilizable |
+|---|---|---|---|---|---|
+| OpenTrainer (laparoscopia DIY) | https://github.com/BME-Open-Index/OpenTrainer | CC BY-SA 4.0 (LICENSE.txt; "Except where otherwise noted", con excepciones de módulos de entrenamiento no leídas) | BOM, archivos de diseño, instrucciones de ensamblaje, videos (carpetas Appendix A-D); contenido de los CAD no abierto | 2026-07-28 | verificar (sí con atribución y ShareAlike, pero es otro dominio) |
+| MacroMicroSurgicalRobot | https://github.com/drliaowu/MacroMicroSurgicalRobot | **no declarada** (API license = null; sin LICENSE) | 6 STL de la punta (meshes/), PartsList.pdf, código ROS | 2024-02-09 | no (sin licencia; pedir permiso al autor) |
+| Friction-TDCR-Tension | https://github.com/Jia0Shen/Friction-TDCR-Tension | **no declarada** | Solo código MATLAB (sin CAD) | 2026-05-13 | no (sin licencia; solo código de modelado) |
+| ROSCO (Rutgers Open Source Colonoscopy Simulator) | sin repositorio hallado (solo paper PMID 26905575) | no declarada en el abstract | Descripción del montaje con materiales comerciales | n/a | verificar (buscar suplemento del paper) |
+| Endonix | sin repositorio hallado (PMID 41345533) | no declarada | Mango impreso 3D (diseño no publicado que se haya visto) | n/a | verificar |
+| HelicoFlex (TU Delft) | sin repositorio hallado (PMID 32407397) | no verificada (suplementos del artículo PLoS no abiertos) | Mango y eje impresos | n/a | verificar |
+| Hardware propio del proyecto | hardware/ (este proyecto) | por decidir | handle.js, STL, AS5600 | n/a | decidir licencia de salida (p. ej. CC BY-SA / CERN-OHL) |
+
+## Evidencia contraria / matices
+- Heisterberg 2025 abandona las ruedas por un joystick por razones de ergonomía: el diseño de ruedas no es el único defendido, aunque para un simulador de destreza psicomotora las ruedas son el constructo (inferencia propia, no declarada por los autores).
+- Hohlstein 2025 (Q2) reporta realismo bajo en no novatos con mango impreso: un mango impreso no garantiza validez de contenido.
+- Johnson 2021 sensa la punta y no las ruedas; sus diferencias se explican sobre todo por movimientos de la mano izquierda (dial): sugiere que sensar las ruedas es informativo, pero no es evidencia directa.
+
+## Gaps
+- No se encontró ningún repositorio (GitHub/Thingiverse/Printables/OSHWA) con mango y ruedas de endoscopio flexible; Printables, Thingiverse, OSHWA e IEEE Xplore NO pudieron consultarse (WebSearch no devolvió listados).
+- No hay datos de vida útil (ciclos) de tendones/ruedas impresos en ninguna fuente incluida.
+- Sin cifras de fuerza de tendón ni de fricción con tubo curvado en diámetro de endoscopio (9-12 mm) en el abstract de ninguna fuente; los textos completos de Kato 2015 (PMC4993112), Dragone 2023 (PMC10535800) y Culmone 2020 (PMC7224500) existen en PMC pero no se leyeron.
+- Sin comparación publicada entre AS5600/potenciómetro/encoder óptico en ruedas de endoscopio; solo Dargar 2013 (óptico, sin cifras) y una patente (absoluto + incremental).
+- Candidatos vistos, no fichados: Song 2023 (sobretubo continuo, histéresis < 1,5 %, carga 4,27 N; DOI 10.1109/tmrb.2023.3294527, resuelto en Crossref), Gao 2024 (histéresis dependiente de rigidez), alphaXiv 2605.16870 / 2603.19124 / 2610.19798; no se verificaron.
+
+## Síntesis por pregunta
+- **P18**: hay mangos impresos (Endonix, HelicoFlex, Heisterberg) y un simulador abierto de USD 62,77 (ROSCO), pero ninguno publica CAD de mango con ruedas de endoscopio flexible; la punta continua de 4 mm de Scott 2024 y la de 5,5 mm de Dragone 2023 cuestan ~AUD 252 / sin costo declarado.
+- **P19**: la fricción tendón-funda domina la histéresis (Kato 2015: 2,89-3,87 mm de error; Zhang 2023: curvaturas de 180° y 360°, -25,5 %/-43,9 % de error; Shen 2026: 36,11 -> 9,42 mm). Vida útil: sin datos.
+- **P20**: sensado de ruedas con encoder óptico (Dargar 2013) o absoluto+incremental (patente KeyMed); la punta puede sensarse ópticamente (Leap Motion, Johnson 2021). AS5600/Hall: sin literatura hallada.
+- **P21**: licencias legibles: OpenTrainer CC BY-SA 4.0; los repos de punta continua no declaran licencia (no reutilizables sin permiso); la patente GB2409326A figura expirada.
+
+
+---
+
+# Anexo — Matriz detallada Q6
+
+# Matriz parcial Q6 — Gamificación, retroalimentación automatizada y diseño de práctica (P22-P24)
+Fecha de búsqueda: 2026-11-10. Fuentes: PubMed (conector MCP; PMID/DOI verificados con metadata) y Consensus (solo descubrimiento; todo PMID/DOI verificado luego en PubMed). Lectura: solo abstract para todos, EXCEPTO Tang 2023 (37993677), leído completo vía PMC10776690. Ningún otro prioritario tiene PMC (Jørgensen, Spruit, Vilmann, Su, Vernier: sin PMC; Moulton PMC1856544 y Scaffidi PMC6443058 existen pero no se leyeron). Snyder 2010 (20698383) tiene ficha de otro agente; se le añadió solo "Responde también a".
+
+## 1. Queries usadas
+| # | Cadena | Fecha | Resultados |
+|---|---|---|---|
+| 1 | (gamification OR "game-based" OR "serious game" OR leaderboard OR "scoring feedback") AND (endoscopy OR colonoscopy OR laparoscopy OR "surgical simulation" OR "procedural skills") AND (learning OR retention OR transfer OR "skill acquisition") | 2026-11-10 | 108 (solo 25 PMIDs listados, sin títulos; no cribados uno a uno) |
+| 2 | ("augmented feedback" OR "automated feedback" OR "artificial intelligence feedback" OR "computer-assisted feedback") AND (endoscopy OR "surgical skills" OR simulat*) | 2026-11-10 | 129 (solo 25 listados; no cribados uno a uno) |
+| 3 | ("distributed practice" OR "spaced practice" OR "massed practice" OR "skill retention") AND (endoscopy OR laparoscopy OR "surgical simulation") | 2026-11-10 | 78 (solo 30 listados; no cribados uno a uno) |
+| 4 | Scaffidi gamification simulation-based endoscopy training randomized | 2026-11-10 | 1 (30804029, protocolo) |
+| 5 | Búsquedas por título/autor para obtener el PMID de candidatos hallados en Consensus (Vilmann, Snyder, Su, El-Beheiry, Vernier, Nøhr, Karim, Spruit, Jørgensen, Tang, Strandbygaard, Moulton) | 2026-11-10 | 1-2 c/u |
+| C1 | Consensus: gamification leaderboard in endoscopy or laparoscopic simulation training effect on skill acquisition | 2026-11-10 | 10 |
+| C2 | Consensus: automated simulator metrics feedback versus expert instructor feedback endoscopy colonoscopy simulation training | 2026-11-10 | 10 |
+| C3 | Consensus: distributed versus massed practice endoscopy or laparoscopic simulation skill retention | 2026-11-10 | 9 |
+
+Nota metodológica: search_articles devuelve solo PMIDs; el triaje por título/abstract se hizo con Consensus y luego se verificó cada PMID/DOI con get_article_metadata. Es una búsqueda orientadora, no exhaustiva.
+
+## 2. Matriz
+| Pregunta | Paper | PMID / DOI | Fuente | Qué responde | Frase textual | Calidad | Verificado en | Sección destino |
+|---|---|---|---|---|---|---|---|---|
+| P24 | Jørgensen 2024 (PRIORITARIO) | 39586877 / 10.1007/s00464-024-11408-3 | PubMed | De 19 estudios que comparan distribuido vs masivo, 15 hallaron efecto positivo del distribuido y ninguno favoreció al masivo; de 13 que comparan esquemas distribuidos, 6 favorecieron alguno y 7 no hallaron diferencia | "Of the 19 studies which compared distributed and massed training, 15 found a positive effect of distributed training, and no studies found massed training to be superior." | MERSQI usado por los autores (valor global no consta en abstract) | Abstract (PubMed) | Métodos/Discusión (diseño del curso piloto) |
+| P24 | Spruit 2014 (PRIORITARIO) | 25318372 / 10.1007/s00464-014-3931-x | Consensus | Mejor desempeño del grupo espaciado al final, a las 2 semanas y al año; efecto mayor en tareas difíciles (sutura intracorpórea) | "One group received three 75-min training sessions on a single day (massed condition) and the other received one 75-min training session per week for three consecutive weeks (spaced condition)." | MERSQI estimado 11-12/18 (estimación; sin cifras de n en abstract) | Abstract (PubMed) | Métodos/Discusión (diseño del curso piloto) |
+| P24 | Tang 2023 (PRIORITARIO) | 37993677 / 10.1007/s00464-023-10522-y | PubMed | Tiempo a proficiencia 291 (DE 89) vs 299 (DE 89) min (p=0,81); en retención 94 (DE 53) vs 96 (DE 39) min (p=0,91) | "We found no difference whether practicing with shorter intervals or longer intervals between training sessions when examining time to proficiency or retention." | RoB 2 estimado: algunas preocupaciones (sin cegamiento de participantes/investigadores, declarado por los autores); poder 90% con diferencia mínima 90 min | Texto completo PMC | Métodos/Discusión (diseño del curso piloto) |
+| P24 | Moulton 2006 | 16926566 / 10.1097/01.sla.0000234808.85789.6a | Consensus | Ambos grupos mejoraron de inmediato; el grupo distribuido fue significativamente mejor en la retención (tiempo, nº de movimientos de mano, puntaje global; todos p<0,05) y en la anastomosis en rata viva (todas las medidas de experto, p<0,05). | "Residents retain and transfer skills better if taught in a distributed manner." | MERSQI estimado 13-14/18; RoB 2: algunas preocupaciones (estimación) | Abstract (PubMed) | Métodos/Discusión (diseño del curso piloto) |
+| P22 | Vilmann 2018 (PRIORITARIO) | 30031803 / 10.1016/j.gie.2018.07.008 | Consensus | El grupo con feedback computarizado superó al control por 14,4 puntos (IC95% 1,2-27,6; p=0,033), practicó 25,8 min más (IC95% 11,6-39,9) y llegó al ciego 3,2 veces más durante la práctica | "The FG outperformed the CG in the final case, FG scoring 14.4 points (95% confidence interval [CI], 1.2-27.6) more than the CG; P = .033" | RoB 2 estimado: algunas preocupaciones (desequilibrio de sexo, ajustado) | Abstract (PubMed) | Discusión (modo práctica vs evaluación; riesgo de gamificación) |
+| P23 | Vilmann 2018 (PRIORITARIO) | 30031803 / 10.1016/j.gie.2018.07.008 | Consensus | El grupo con feedback computarizado superó al control por 14,4 puntos (IC95% 1,2-27,6; p=0,033), practicó 25,8 min más (IC95% 11,6-39,9) y llegó al ciego 3,2 veces más durante la práctica | "The FG outperformed the CG in the final case, FG scoring 14.4 points (95% confidence interval [CI], 1.2-27.6) more than the CG; P = .033" | RoB 2 estimado: algunas preocupaciones (desequilibrio de sexo, ajustado) | Abstract (PubMed) | Discusión (feedback automatizado vs tutor) |
+| P23 | Snyder 2010 | 20698383 / sin DOI en PubMed | Consensus | Retención (mediana 10) > línea base (5; p<0,0001) y sin diferencia con post-entrenamiento (10; p=0,19); sin diferencias entre modalidades independiente vs tutor | "colonoscopy skills are retained for several months, regardless of whether an independent or proctored approach is used" | MERSQI estimado 9-10/18; n=13, subanálisis, poder insuficiente | Abstract (PubMed) | Discusión (feedback automatizado vs tutor) |
+| P24 | Snyder 2010 | 20698383 / sin DOI en PubMed | Consensus | Retención (mediana 10) > línea base (5; p<0,0001) y sin diferencia con post-entrenamiento (10; p=0,19); sin diferencias entre modalidades independiente vs tutor | "colonoscopy skills are retained for several months, regardless of whether an independent or proctored approach is used" | MERSQI estimado 9-10/18; n=13, subanálisis, poder insuficiente | Abstract (PubMed) | Métodos/Discusión (diseño del curso piloto) |
+| P23 | Su 2025 (PRIORITARIO) | 40494327 / 10.1159/000546827 | Consensus | Todos los grupos mejoraron en 12 sesiones y no cayeron a las 3 semanas (p>0,05) | "Tutor feedback is superior to VR guidance feedback and no feedback." | RoB 2 estimado: algunas preocupaciones (n=12 por brazo, efecto techo en SP del grupo tutor 18 ± 0) | Abstract (PubMed) | Discusión (feedback automatizado vs tutor) |
+| P24 | Su 2025 (PRIORITARIO) | 40494327 / 10.1159/000546827 | Consensus | Todos los grupos mejoraron en 12 sesiones y no cayeron a las 3 semanas (p>0,05) | "Tutor feedback is superior to VR guidance feedback and no feedback." | RoB 2 estimado: algunas preocupaciones (n=12 por brazo, efecto techo en SP del grupo tutor 18 ± 0) | Abstract (PubMed) | Métodos/Discusión (diseño del curso piloto) |
+| P23 | Strandbygaard 2013 | 23295321 / 10.1097/SLA.0b013e31827eee6e | Consensus | Con feedback del instructor: menos tiempo (162 vs 342 min; p<0,005) y menos repeticiones (29 vs 65; p<0,005); el control logró mayor puntaje (57% vs 49%; p=0,004) | "The control group achieved a higher performance score than the intervention group (57% vs 49%; P = 0.004)." | RoB 2 estimado: bajo-algunas preocupaciones; MERSQI estimado 13-14/18 | Abstract (PubMed) | Discusión (feedback automatizado vs tutor) |
+| P22 | El-Beheiry 2016 | 27572069 / 10.1007/s00464-016-5152-y | Consensus | Uso mediano 132 vs 89 min; 44% vs 4% siguió usando el simulador tras cumplir el curso (p=0,002); peg transfer más rápido (194 ± 66 vs 233 ± 53 s; p=0,03) | "The competition cohort overwhelmingly (76 %) stated that they were not motivated to deliberate practice by competition." | ROBINS-I estimado: serio (cohortes históricas, confusión por cohorte); MERSQI estimado 10/18 | Abstract (PubMed) | Discusión (modo práctica vs evaluación; riesgo de gamificación) |
+| P22 | Vernier 2026 (PRIORITARIO) | 41936222 / 10.1016/j.jclinane.2026.112199 | Consensus | Sin diferencia en GRS (F(1,47)=2,3; p=0,14), pendiente de curva de aprendizaje (p=0,15), puntajes del simulador (p=0,51), errores (p=0,89) ni NASA-TLX ponderado (-3,5 vs -7,7; p=0,17) | "Gamification of an existing virtual reality simulator did not provide additional benefit compared to the original non-gamified simulator." | RoB 2 estimado: bajo-algunas preocupaciones; MERSQI estimado 14/18 | Abstract (PubMed) | Discusión (modo práctica vs evaluación; riesgo de gamificación) |
+| P22 | Nøhr 2026 | 42715416 / 10.1097/SIH.0000000000000966 | Consensus | Barras de progreso: +1,5 puntos (p<0,002) | "Participants with gaming experience outperformed non-gamers overall (mean difference: 1.4 points; P < 0.002), particularly in early training." | RoB 2 estimado: algunas preocupaciones (n=24; resultados por subgrupo); MERSQI estimado 12/18 | Abstract (PubMed) | Discusión (modo práctica vs evaluación; riesgo de gamificación) |
+| P24 | Nøhr 2026 | 42715416 / 10.1097/SIH.0000000000000966 | Consensus | Barras de progreso: +1,5 puntos (p<0,002) | "Participants with gaming experience outperformed non-gamers overall (mean difference: 1.4 points; P < 0.002), particularly in early training." | RoB 2 estimado: algunas preocupaciones (n=24; resultados por subgrupo); MERSQI estimado 12/18 | Abstract (PubMed) | Métodos/Discusión (diseño del curso piloto) |
+| P22 | Karim 2025 | 40907430 / 10.1016/j.jss.2025.07.060 | PubMed | Solo 52% (25/48) usó el entrenador al menos una vez | "The 'Operation' trainer's automated negative-only feedback delivery mechanism discouraged laparoscopic skills practice among novices." | RoB 2 estimado: algunas preocupaciones (práctica voluntaria, 52% de uso); MERSQI estimado 11/18 | Abstract (PubMed) | Discusión (modo práctica vs evaluación; riesgo de gamificación) |
+| P23 | Karim 2025 | 40907430 / 10.1016/j.jss.2025.07.060 | PubMed | Solo 52% (25/48) usó el entrenador al menos una vez | "The 'Operation' trainer's automated negative-only feedback delivery mechanism discouraged laparoscopic skills practice among novices." | RoB 2 estimado: algunas preocupaciones (práctica voluntaria, 52% de uso); MERSQI estimado 11/18 | Abstract (PubMed) | Discusión (feedback automatizado vs tutor) |
+| P22 | Scaffidi 2019 | 30804029 / 10.1136/bmjopen-2018-024134 | Consensus | Protocolo: no informa efectos | "No studies have investigated the effects of a comprehensive gamification curriculum on the acquisition of endoscopic skills among novice endoscopists." | No aplica (protocolo) | Abstract (PubMed) | Discusión (modo práctica vs evaluación; riesgo de gamificación) |
+| P24 | Scaffidi 2019 | 30804029 / 10.1136/bmjopen-2018-024134 | Consensus | Protocolo: no informa efectos | "No studies have investigated the effects of a comprehensive gamification curriculum on the acquisition of endoscopic skills among novice endoscopists." | No aplica (protocolo) | Abstract (PubMed) | Métodos/Discusión (diseño del curso piloto) |
+
+## 3. Evidencia CONTRARIA / efectos adversos
+- Vernier 2026 (41936222): simulador gamificado (leaderboards, hitos, feedback en tiempo real) sin diferencia en GRS (p=0,14), curvas (p=0,15) ni puntajes (p=0,51).
+- Karim 2025 (40907430): feedback gamificado solo negativo desalentó la práctica; solo 52% usó el entrenador; sin asociación con mejora.
+- El-Beheiry 2016 (27572069): ranking solo por velocidad; mejora la velocidad (la métrica premiada), 76% no se sintió motivado por la competencia; sin medidas de calidad ni transferencia -> riesgo de premiar velocidad.
+- Nøhr 2026 (42715416) y Vilmann 2018 (30031803): la experiencia previa con videojuegos (+1,4 puntos, sobre todo al inicio) y el sexo (37,6 vs 19,7) se asocian al puntaje -> varianza irrelevante al constructo (riesgo de validez si los puntajes del simulador se usan para evaluar).
+- Su 2025 (40494327): la guía automatizada VR no superó a no feedback (p=1,00); tutor superior (SP 18 vs 15,0; p=0,026).
+- Strandbygaard 2013 (23295321): con feedback de instructor, menor puntaje (49% vs 57%; p=0,004) pese a menos tiempo.
+- Tang 2023 (37993677): intervalo corto vs largo sin diferencia -> la ventaja de "más distribuido" no es universal.
+
+## 4. Gaps
+- No se encontró ECA con resultados de gamificación en endoscopia flexible (solo protocolo Scaffidi 2019; resultado no localizado). Consensus mostró simuladores con feedback automático en tiempo real (Mikoto: Olabintan 2025 iGIE, Vamadevan 2026 Surg Endosc, Yamaguchi 2026 J Gastroenterol Hepatol; LearnEndo, resumen Endoscopy 2025) NO verificados en PubMed/sin PMID -> no incluidos.
+- Sin evidencia de feedback por IA/video en endoscopia flexible en esta búsqueda (lo más cercano: Su 2025, broncoscopia).
+- Sin estudios de práctica distribuida vs masiva en endoscopia digestiva flexible; toda la evidencia es de laparoscopia, microcirugía u otras especialidades.
+- Cribado de las 3 búsquedas principales limitado a los PMIDs listados (25-30 de 78-129).
+
+## 5. Síntesis por pregunta
+**P22 (gamificación).** Evidencia mixta, de bajo nivel y casi toda fuera de endoscopia digestiva. A favor: leaderboard de velocidad aumentó el uso voluntario (44% vs 4%) y la velocidad de peg transfer (194 vs 233 s; El-Beheiry, cohorte histórica); barras de progreso +1,5 puntos y +2,5 en retención a 2,5 meses en no-gamers (Nøhr, n=24). Nulo/adverso: sin beneficio (Vernier, n=60, p=0,14-0,89); feedback negativo gamificado desalentó práctica (Karim). Riesgos de validez: rankings por velocidad premian la métrica y no la calidad; la experiencia con videojuegos y el sexo introducen varianza irrelevante. Implicación: separar modo práctica (puede incluir feedback/juego) de modo evaluación (sin juego ni ranking por tiempo; métricas crudas).
+**P23 (feedback automatizado vs tutor).** Computarizado en colonoscopia: +14,4 puntos (IC95% 1,2-27,6) vs sin feedback, con más tiempo de práctica (Vilmann, n=44). Tutor superior a la guía VR, y la guía VR no superó al control, en broncoscopia flexible (Su, n=36). Retención de colonoscopia VR a 4,5 meses similar con feedback automático solo vs con tutor (Snyder, n=13, poder bajo). Feedback de instructor reduce tiempo (162 vs 342 min) pero con menor puntaje (Strandbygaard, n=99). Conclusión: feedback automatizado simple parece útil como complemento; sin evidencia de IA/video en endoscopia en esta búsqueda.
+**P24 (distribución, sesiones, retención).** Revisión sistemática de 28 estudios: 15/19 favorecen distribuido, ninguno el masivo; recomendación una sesión/día, máx. 2 h (Jørgensen). Spruit: 3 x 75 min semanales superó a masivo (proficiencia 65% vs 21%), con ventaja a 2 semanas y 1 año. Moulton: ventaja distribuida en retención a 1 mes y transferencia a rata viva. Tang: 1-2 vs 6-8 días sin diferencia (tiempo a proficiencia 291 vs 299 min; retención a 3-5 semanas 94 vs 96 min). Contraste con el piloto (6 sesiones de 45-60 min, retención 2-4 semanas): es un esquema distribuido dentro del rango respaldado (sesiones <2 h; retención comparable a Spruit/Tang/Su), pero la evidencia viene de laparoscopia/broncoscopia, no de endoscopia digestiva flexible, y la retención se mide mayormente como re-entrenamiento o en la misma tarea.
+
+
+---
+
+# Anexo — Matriz detallada Q7
+
+# Matriz parcial Q7 — Transferencia al paciente y retención (EGD y colonoscopia)
+Fecha de búsqueda: 2026-11-10 · Fuente: PubMed (conector MCP). Consensus no se usó.
+
+## Cadenas de búsqueda (2026-11-10)
+1. Base: (endoscopy OR colonoscopy OR gastroscopy OR esophagogastroduodenoscopy) AND (simulat* OR "virtual reality" OR "training model") AND (transfer OR "real patients" OR "clinical performance" OR "patient outcomes" OR retention) AND (randomized OR controlled OR "systematic review") — 343 resultados (solo se obtuvieron los 40 primeros por PMID).
+2. simulation training colonoscopy OR endoscopy randomized controlled trial transfer to clinical performance real patients (hasta 2025) — 211 (traducción automática ruidosa).
+3. (endoscopy OR colonoscopy) AND simulator AND (retention OR "skill retention" OR "follow-up") AND training — 246 (ruidosa).
+4. Dirigida por [Title]: (colonoscopy/endoscopy/gastroscopy/endoscopic)[Title] AND (simulator/simulation/"virtual reality")[Title] AND (randomized/transfer/"systematic review"/meta-analysis/retention)[Title] — 60 resultados; 40 PMID devueltos.
+5. (low-cost OR "box trainer" OR "physical model" OR "ex vivo" OR porcine OR "bench model") AND (colonoscopy OR endoscopy OR gastroscopy) AND (training OR simulator) AND (randomized OR "real patients" OR transfer) AND (retention OR clinical) — 293 (ruidosa; no cribada en profundidad).
+6. Walsh + Cochrane/meta-analysis + endoscopy simulation patient — 72 (ruidosa).
+7. Boza simulation endoscopy OR colonoscopy OR gastroscopy Pontificia Universidad Católica training transfer — 59.936 (inservible: la consulta se interpretó mal).
+8. [Title] + Publication Type = RCT (endoscopy/colonoscopy/... AND model/simulator/simulation/training AND patients/"clinical performance"/retention/transfer/"learning curve") — 13 resultados.
+Limitaciones: las consultas en lenguaje natural se tradujeron mal y el cribado fue parcial (se revisaron metadatos de ~23 de los PMID devueltos). Haycock 2010, Sedlack 2004, la Cochrane 2012/2018 por PMID propio y otros ECA clásicos no se localizaron en esta pasada: NO se citan. La Cochrane 2025 (40919710) es la actualización de 2012/2018; Khan 2019 (31071757) es la versión Endoscopy de la Cochrane 2018 según su abstract.
+
+## Papers incluidos (verificados en PubMed; texto fuente en texto/<PMID>.txt)
+| Pregunta | Paper | PMID/DOI | Fuente | Qué responde | Frase textual | Calidad | Verificado en | Sección destino |
+|---|---|---|---|---|---|---|---|---|
+| P25 | Sabrie 2025 Cochrane (20 ECA, solo VR) | 40919710 / 10.1002/14651858.CD008237.pub4 | PubMed | VR > no entrenar en independencia; incierto vs entrenamiento en pacientes | "VR training likely provides participants with a benefit, as measured by independent procedure completion (RR 1.62, 95% CI 1.15 to 2.26; 6 trials, 815 procedures; moderate-certainty evidence)." | GRADE moderada a muy baja; 4/20 con bajo riesgo de sesgo | texto/40919710.txt | Discusión (límites de la evidencia) |
+| P25 | Khan 2019 | 31071757 / 10.1055/a-0894-4400 | PubMed | Igual, versión previa (18 ECA) | "There is insufficient evidence that simulation training provides benefit over conventional training." | GRADE baja-moderada | texto/31071757.txt | Antecedentes |
+| P25 | Singh 2014 RS+MA | 24509241 / 10.1016/j.cgh.2014.01.037 | PubMed | Conducta clínica ES 0,49; tiempo clínico ES 0,75; pacientes ES 0,45 | "process behaviors in clinical practice (ES, 0.49; n = 8)" | Alta | texto/24509241.txt | Antecedentes |
+| P25 | Dawe 2014 RS transferencia | 24100339 / 10.1097/SLA.0000000000000245 | PubMed | 10 estudios de endoscopia; sigmoidoscopia mejor con pacientes que con simulación sola | "Not all parameters measured were improved." | Moderada | texto/24100339.txt | Antecedentes |
+| P25 | Qiao 2014 RS | 24586609 / 10.1371/journal.pone.0089224 | PubMed | Gastroscopia RR 1,25; colonoscopia RR 1,10 (IC95% 0,88-1,37) | "Virtual endoscopy simulator training might be effective for gastroscopy, but so far no data is available to support this for colonoscopy." | Moderada | texto/24586609.txt | Antecedentes |
+| P25 | Cohen 2006 ECA multicéntrico | 16923483 / 10.1016/j.gie.2005.11.062 | PubMed | Ventaja en primeros 80-100 casos; 160 casos a 90% de competencia en ambos | "The median number of cases needed to reach 90% competency was 160 in both groups." | RoB 2 algunas preocupaciones | texto/16923483.txt | Discusión (acortamiento) |
+| P25 | Ferlitsch 2010 ECA EGD | 20972956 / 10.1055/s-0030-1255818 | PubMed | Tiempo a duodeno 239 vs 310 s en primeras 10 EGD; efecto clínico limitado | "It helps reduce the time needed to reach technical competency, but clinically the effect is limited." | RoB 2 algunas preocupaciones | texto/20972956.txt | Discusión (EGD) |
+| P25 | Grover 2015 ECA | 26007221 / 10.1016/j.gie.2015.04.008 | PubMed | Currículo estructurado > autorregulado en 2 colonoscopias clínicas | "The SCC group performed superiorly during their first and second clinical colonoscopies." | RoB 2 algunas preocupaciones | texto/26007221.txt | Antecedentes |
+| P25 | Grover 2017 ECA | 28366440 / 10.1016/j.gie.2017.03.1529 | PubMed | Currículo progresivo > estructurado en 2 colonoscopias clínicas | "The PLC group outperformed the SCC group during first and second clinical colonoscopies, measured by JAG DOPS (P < .001)." | RoB 2 algunas preocupaciones | texto/28366440.txt | Antecedentes |
+| P25 | Siau 2020 SPRINT | 32218889 / 10.4253/wjge.v12.i3.98 | PubMed | Seguimiento 16 meses: sin diferencia en intubación D2; certificación más temprana | ver ficha | Casos y controles, piloto | texto/32218889.txt | Discusión |
+| P25 | Cassidy 2022 ECA | 35146554 / 10.1007/s00464-021-08958-1 | PubMed | VR a porcino vivo (GAGES colon 10,4 a 16,4); sin control no entrenado | "A VR endoscopy curriculum translates to improved performance in upper and lower endoscopy in a live animal model." | RoB 2 algunas preocupaciones | texto/35146554.txt | Antecedentes |
+| P26 | Mascagni 2022 (BEST vs VR) | 35258487 / 10.1097/XCS.0000000000000157 | PubMed | Caja de bajo costo equivalente a VR en FES y ex vivo a 1-2 semanas; no paciente | "Low-cost BTs like the BEST box compare well with high-tech VRSs and could help democratize endoscopy training." | RoB 2 bajo-algunas preocupaciones | texto/35258487.txt | Posicionamiento |
+| P26/P27 | Riek 2017 dispositivo de punta | 28593418 / 10.1007/s00464-017-5617-7 | PubMed | Pre-post; generalización a superficies nuevas; sin paciente | "these improvements also generalized to novel training surfaces (P's < 0.01)" | Baja-moderada | texto/28593418.txt | Antecedentes (transferencia cercana) |
+| P26 | Kulcheski 2026 (endoscopia espinal, USD 90) | 41810654 / 10.1590/0100-6991e-20260022-en | PubMed + PMC | ECA de transferencia a cirugía real con simulador sintético de bajo costo (no GI) | "The total cost for the simulator was US$90.0010." | RoB 2 algunas preocupaciones | texto/41810654.txt | Discusión (analogía) |
+| P27 | Snyder 2010 | 20698383 / DOI no informado por PubMed | PubMed | Retención VR a 4,5 meses (n=13, mismo simulador) | "Error avoidance skills may not be retained as well as speed and efficiency skills." | Baja-moderada | texto/20698383.txt | Discusión |
+| P27 | De Win 2013 | 23618450 / 10.1016/j.jsurg.2013.01.005 | PubMed | Retención 1 y 6 meses, tarea nueva (piel de pollo); laparoscopia | "After 6 months only a statistical difference (p = 0.04) between group OD and group TD was observed." | RoB 2 algunas preocupaciones | texto/23618450.txt | Metodología |
+| P25/P27 | Varas 2012 (grupo UC) | 22733192 / 10.1007/s00464-012-2391-4 | PubMed | Transferencia laparoscópica a porcino vivo; no endoscopia flexible | ver ficha | Baja-moderada | texto/22733192.txt | Antecedentes UC |
+
+## Evidencia CONTRARIA o limitante
+- Cochrane 2025 (40919710): VR vs entrenamiento en pacientes puede dar menos finalizaciones independientes (RR 0,45; IC95% 0,27-0,74; certeza baja); puntaje compuesto vs no entrenar sin diferencia clara (MD 3,10; IC95% -0,16 a 6,36; 1 ensayo, 24 procedimientos).
+- Qiao 2014 (24586609): sin beneficio demostrado en colonoscopia (RR 1,10; IC95% 0,88-1,37; I2=85%).
+- Cohen 2006 (16923483): mediana de casos a 90% de competencia igual (160) en ambos grupos.
+- Ferlitsch 2010 (20972956): efecto clínico limitado; a las 60 EGD sin diferencia técnica.
+- Dawe 2014 (24100339): en sigmoidoscopia fue más efectivo el entrenamiento en pacientes que la simulación aislada.
+- Siau 2020 (32218889): sin diferencia en intubación D2 sin asistencia ni en discomfort a largo plazo.
+
+## Gaps
+1. No se halló ECA de transferencia a paciente real con simulador FÍSICO de bajo costo en EGD/colonoscopia; la evidencia en pacientes es casi toda VR. Mascagni 2022 mide FES y ex vivo; Kulcheski 2026 es espinal.
+2. Sin estudio de retención >= 2 semanas en endoscopia digestiva en pacientes; el único dato (Snyder 2010) es en el mismo simulador VR (4,5 meses, n=13).
+3. No se halló en PubMed (esta pasada) versión endoscópica del grupo UC/Boza; solo Varas 2012 laparoscópico. No verificable: no se afirma que no exista.
+4. Cribado parcial de las cadenas 1-3 y 5; pueden existir ECA no capturados (p. ej., simuladores físicos/ex vivo antiguos). No se citan referencias no verificadas.
+5. Texto completo leído solo para 41810654 (PMC). 35146554 y 24586609 tienen PMC pero no se leyeron; el resto, solo abstract.
+
+## Síntesis por pregunta
+- P25: Las revisiones coinciden en que simular mejora el desempeño temprano real frente a no entrenar (Cochrane 2025: independencia RR 1,62; Singh 2014: conducta clínica ES 0,49, tiempo ES 0,75, pacientes ES 0,45). Los ECA muestran ventaja en los primeros 10-100 casos (Ferlitsch: 239 vs 310 s; Cohen: primeros 80-100 casos), pero la curva converge (90% de competencia a los 160 casos en ambos grupos). Frente a entrenamiento en pacientes no hay evidencia de reemplazo.
+- P26: La caja de bajo costo solo se comparó con VR en desenlace intermedio (Mascagni: FES +25,16 vs +25,58 puntos; p=0,89). La transferencia a cirugía real con simulador sintético de USD 90 es espinal (Kulcheski). Transferencia al paciente con simulador físico de bajo costo en EGD/colonoscopia: no demostrada en lo hallado.
+- P27: Retención: un único estudio en colonoscopia VR (Snyder: mediana 10 vs 10 a 4,5 meses, n=13, mismo simulador). Transferencia cercana usada: Riek 2017 (superficies nuevas con colonoscopio real), De Win 2013 (sutura en piel de pollo a 1 y 6 meses, laparoscopia), Cassidy 2022 (animal vivo).
+
+## Estudios de transferencia
+| Estudio | Simulador | Diseño | n | Desenlace real | Resultado | Razón de acortamiento |
+|---|---|---|---|---|---|---|
+| Cohen 2006 | VR GI Mentor, 10 h | ECA multicéntrico | 45 | Competencia en 200 colonoscopias reales | Mejor en primeros 80-100 casos | Mediana 160 casos a 90% en ambos grupos (razón 1) |
+| Ferlitsch 2010 | VR (EGD) | ECA | 28 (14 hasta 60 EGD) | Tiempo a duodeno, técnica | 239 vs 310 s en las primeras 10 | No calculada; diferencia técnica desaparece a las 60 |
+| Grover 2015 | VR + currículo | ECA | 33 | JAG DOPS en 2 colonoscopias | Currículo > autorregulado | No calculada |
+| Grover 2017 | VR progresivo | ECA | 37 | JAG DOPS en 2 colonoscopias | PLC > SCC (P<0,001) | No calculada |
+| Siau 2020 | Inducción con simulación | Casos y controles | 15 vs 24 | Intubación D2, certificación a 16 meses | Certificación 75% vs 36% | No calculada como razón |
+| Cassidy 2022 | VR (FES) | ECA 2 currículos | 22 | GAGES en animal vivo | Colon 10,4 a 16,4 | No aplica |
+| Kulcheski 2026 | Sintético USD 90 | ECA | 40 | Endoscopia espinal real supervisada | Tiempo -43,7%; GOALS 23 vs 8 | No aplica (no GI) |
+| Varas 2012 | Banco laparoscópico | Cuasi-experimental | 25 vs 11 | Yeyunoyeyunostomía porcina | OSATS 21 vs 8 | No aplica |
+Razón de acortamiento: solo Cohen 2006 permite inferirla (160 vs 160 casos); en el resto no es verificable.
+
+
+---
+
+# Anexo — Matriz detallada Q8
+
+# Matriz parcial Q8 — Standard setting, tamaño muestral, confiabilidad y marcos de validez (P28–P31)
+Fecha de búsqueda: 2026-11-10. Fuentes: PubMed (conector MCP; PMID/DOI verificados con get_article_metadata) y Consensus (solo descubrimiento; todo lo incluido se verificó luego en PubMed). Lectura: solo abstract, salvo 29556423 (texto completo PMC5845294). get_full_text_article se intentó solo en 29556423; los demás prioritarios con PMC (29450000, 41466255, 35692913) no se leyeron a texto completo. Texto fuente de verificación en `05_papers/texto/<PMID>.txt`.
+
+## 1. Queries usadas
+| # | Cadena | Resultados |
+|---|---|---|
+| 1 | ("standard setting" OR "cut score" OR "passing score" OR "contrasting groups" OR "borderline group" OR Angoff) AND (procedural OR "technical skills" OR simulation OR OSCE OR endoscopy) | 1631 (solo 25 IDs, sin títulos; no triable) |
+| 2 | Idem con ("standard setting"/"cut score"/"passing score"/"contrasting groups"/"borderline group") AND ("technical skills" OR simulation OR endoscopy) AND (review OR guide OR method) | 245 (20 IDs recientes; sin títulos; no triable) |
+| 3 | ("sample size" OR power) AND "construct validity" AND (simulator OR simulation) | 36 (20 IDs; sin títulos; no triable; se triaron por Consensus) |
+| 4 | ("intraclass correlation" OR "generalizability theory" OR "G-study") AND ("technical skills" OR "global rating" OR OSATS OR endoscopy) AND (raters OR assessors) | 264 (20 IDs recientes; no triable) |
+| 5 | (Messick OR Kane) AND validity AND (simulation OR "health professions education") | 199 (20 IDs recientes; no triable) |
+| 6 | (endoscopy OR colonoscopy OR gastroscopy) AND simulator AND ("pass/fail" OR "passing score" OR "cut-off" OR "contrasting groups" OR "proficiency level" OR benchmark) AND validity (relevancia) | 119 (15 IDs listados) |
+| 7-14 | Búsquedas por título/autor para verificar PMID de: Cook 2016, Cook 2015, Cheng 2016, Jørgensen 2018, Yudkowsky 2015, Bloch & Norman 2012, Pietersen 2021, Sridharan 2025, Vassiliou 2013, Nielsen 2022, Jaensch 2023, Van Nortwick 2010, Borgersen 2018, Koo & Li 2016, Sun 2026 | 1-3 c/u (Van Nortwick solo apareció con filtro de año 2010) |
+| C1 | Consensus: standard setting methods pass/fail cut-off technical skills simulation contrasting groups borderline Angoff | 10 |
+| C2 | Consensus: sample size justification construct validity studies surgical simulators novices experts systematic review | 12 |
+| C3 | Consensus: endoscopy simulator pass/fail standard setting contrasting groups proficiency criteria validity evidence | 10 |
+
+Nota: la búsqueda PubMed por cadenas amplias devuelve IDs sin títulos y ordenados por fecha; no son triables. Por eso los candidatos salieron de Consensus y de búsquedas por título, siempre verificados en PubMed.
+
+## 2. Matriz
+| Pregunta | Paper (autor, año) | PMID / DOI | Fuente | Qué responde | Frase textual | Calidad | Verificado en | Sección destino |
+|---|---|---|---|---|---|---|---|---|
+| P28 | Jørgensen 2018 (prioritario) | 29556423 / 10.1186/s41077-018-0064-7 | PubMed | Contrasting groups: corte = intersección de dos curvas normales; reportar FP/FN teóricos además de observados; borderline pide n grande | "In such cases, borderline-based methods are more feasible, but this method often requires big sample sizes before ‘enough’ trainees are judged as borderline." | Moderada-alta | Texto completo PMC | Métodos (estándar), Discusión |
+| P28 | Pietersen 2021 (prioritario) | 34520423 / 10.1097/SLA.0000000000005209 | PubMed | 162 estudios de standard setting en simulación quirúrgica; 40% usa media/mediana de experimentados | "Most studies described how the standard setting was determined (N = 147, 91%) and most used the mean or median performance score of experienced surgeons (n = 65, 40%) for standard setting." | Alta | Abstract | Introducción, Discusión |
+| P28 | Vassiliou 2013 (prioritario) | 24253562 / 10.1007/s00464-013-3298-4 | PubMed | FES: corte por contrasting groups + ROC, sens 0.81 / 1-esp 0.21, n=160 | "Passing scores were determined by a contrasting groups methodology and use of receiver operating characteristic curves." | Alta | Abstract | Métodos, Discusión |
+| P28 | Yudkowsky 2015 | 26375263 / 10.1097/ACM.0000000000000887 | PubMed | En mastery learning redefinir el borderline; conjuntivos de seguridad | "Patient safety considerations support conjunctive standards for key knowledge and skill subdomains and for items that have an impact on clinical outcomes." | Alta | Abstract | Métodos (estándar B) |
+| P28 | Sridharan 2025 | 41466255 / 10.1186/s12909-025-08300-6 | PubMed | Angoff es una familia de métodos; resultados dependen de la variante | "Therefore, selecting a specific Angoff variant must be a conscious decision aligned with the assessment's purpose and context." | Moderada | Abstract | Discusión (por qué no Angoff) |
+| P28 | Nielsen 2022 | 35692913 / 10.1055/a-1814-9747 | PubMed | EGD en simulador, contrasting groups, corte todo-o-nada | "A pass/fail standard was established requiring identification of all landmarks and performance of the TSP in < 5 minutes." | Moderada | Abstract | Discusión (comparación) |
+| P28, P29 | Jaensch 2023 | 37563741 / 10.1186/s41077-023-00260-5 | PubMed | Colonoscopia GI Mentor: n=8/8/8, cálculo de potencia, corte 17.1; experto vs intermedio no significativo | "Although expert endoscopists had a higher score, the difference was not statistically significant (p=0.40)." (ficha existente) | Moderada | Abstract | Métodos / Discusión |
+| P28, P30 | Sun 2026 | 41963810 / 10.1186/s12871-026-03809-9 | PubMed | Broncoscopia flexible: Messick + G-theory (6 casos >0.7; 10 casos >0.8) + contrasting groups (34.4%) | "Generalizability theory analyses found that six cases were required for formative assessment (reliability > 0.7) and 10 cases were required for summative assessment (reliability > 0.8)." | Moderada | Abstract | Métodos (ensayos por sujeto) |
+| P29 | Van Nortwick 2010 (prioritario) | 20015529 / 10.1016/j.surg.2009.10.068 | PubMed | Estudio típico: unicéntrico, media de 37 sujetos, 45% reporta confiabilidad | "Most studies (82%) were conducted in a single institution with a mean of 37 subjects recruited." | Moderada (antigua) | Abstract | Métodos (n), Discusión |
+| P29, P31 | Borgersen 2018 | 29303808 / 10.1097/SLA.0000000000002652 | PubMed | 498 estudios/18,312 participantes; solo 6.6% usa Messick | "Only 6.6% of the studies used the recommended contemporary validity framework (Messick)." | Alta | Abstract | Introducción |
+| P30 | Koo & Li 2016 | 27330520 / 10.1016/j.jcm.2016.02.012 | PubMed | Elegir y reportar la forma del ICC; umbrales por IC 95% | "Based on the 95% confident interval of the ICC estimate, values less than 0.5, between 0.5 and 0.75, between 0.75 and 0.9, and greater than 0.90 are indicative of poor, moderate, good, and excellent reliability, respectively." | Alta (práctica) | Abstract | Métodos (análisis) |
+| P30 | Bloch & Norman 2012 | 23140303 / 10.3109/0142159X.2012.703791 | PubMed | G-theory y D-study para planear evaluadores/ensayos | "In G theory, various sources of error contributing to the inaccuracy of measurement are explored." | Alta | Abstract | Métodos (plan de confiabilidad) |
+| P30 | Vassiliou 2013 | 24253562 | PubMed | Test-retest ICC 0.85 en n=11 | "Test-retest reliability was assessed in 11 participants, and the intraclass correlation was 0.85." | Alta | Abstract | Métodos |
+| P31 | Cook & Hatala 2016 (prioritario) | 29450000 / 10.1186/s41077-016-0033-y | PubMed | Messick y Kane; ocho pasos de validación | "A framework proposed by Messick identifies potential evidence sources: content, response process, internal structure, relationships with other variables, and consequences." | Alta | Abstract | Métodos (marco), Discusión |
+| P31 | Cook 2015 | 25989405 / 10.1111/medu.12678 | PubMed | Kane: cuatro inferencias; implicaciones = la más importante | "The Implications and associated decisions are the most important inferences in the validity argument." | Alta | Abstract | Métodos |
+| P31 | Cheng 2016 (prioritario) | 27465839 / 10.1097/SIH.0000000000000150 | PubMed | Extensiones simulación de CONSORT (11) y STROBE (10) | "We have developed extensions for the CONSORT and STROBE Statements that can help improve the quality of reporting for SBR." | Alta | Abstract | Métodos (reporte) |
+
+Duplicado: Cheng 2016 existe también como PMID 29449994 (Adv Simul, PMC5806464, DOI 10.1186/s41077-016-0025-y); citar una sola versión.
+
+## 3. Evidencia contraria / limitaciones
+- Contrasting groups depende de grupos bien separados y con n suficiente; con n pequeño los FP/FN observados son inestables (Jørgensen 2018: FP observado 9.1% vs teórico 2.7%; FN 0.0% vs 6.4% en un estudio de colonoscopia).
+- Corte demasiado estricto: Nielsen 2022 EGD, ningún intermedio aprobó; Jaensch 2023, 3 expertos y 3 intermedios reprobaron y 1 novato aprobó; la diferencia experto vs intermedio no fue significativa (p=0.40), con n=8 por grupo.
+- Pietersen 2021: considerable heterogeneidad y evidencia baja-moderada en standard setting de simulación; "experto" se define de forma inconsistente.
+- Angoff: resultados dependientes de la variante (Sridharan 2025); además requiere jueces e ítems; poco aplicable a métricas crudas continuas.
+- Van Nortwick 2010 y Borgersen 2018: la práctica dominante es unicéntrica, n pequeño, sin justificar n y sin marco moderno.
+
+## 4. Gaps
+- No se encontró (y no se verificó) ningún método formal de cálculo de tamaño muestral específico para estudios de validación de constructo con simuladores; la evidencia es descriptiva (rangos de n), no prescriptiva. Cálculo muestral propio debe hacerse con stats-agent (p. ej., contraste Kruskal/Mann-Whitney para tamaño de efecto esperado; ICC con intervalo de precisión).
+- No se verificó cuántos evaluadores/ensayos requiere GAGES/OSATS en endoscopia (solo Sun 2026 en broncoscopia: 6-10 casos). Falta una G-study con evaluadores humanos en endoscopia.
+- Hofstee y borderline regression: solo hay candidatos por Consensus sin PMID verificado en PubMed (Dwyer 2016 BMC Med Educ, Tappan 2025 Clin Teach, Allahyari 2026 J Vet Med Educ, Vamadevan 2026 Surg Endosc con contrasting groups y Mikoto). No se incluyeron en fichas.
+- Montbrun (OSATS, contrasting groups vs borderline) y Goldenberg (revisión de estándares absolutos) se citan dentro de Jørgensen 2018 pero no se buscaron ni verificaron en PubMed.
+- [no PubMed, sin PMID] Standards for Educational and Psychological Testing (AERA/APA/NCME): no es artículo indexado; su uso como base de validación se verifica en Jaensch 2023 (PMID 37563741: "The validation process was conducted based on the Standards for Educational and Psychological Testing"). Libros de Downing/Yudkowsky: no se incluyen; no hay PMID.
+- GRRAS (reporte de estudios de confiabilidad/acuerdo, Kottner 2011): el artículo original no se verificó; solo apareció Gerke 2018 (PMID 30249982) que lo discute, no incluido.
+- No se localizaron extensiones de reporte de simulación específicas para estudios de validación (más allá de CONSORT/STROBE-SBR).
+
+## 5. Síntesis por pregunta
+- **P28.** Métodos: grupos contrastantes (participante-céntrico; intersección de distribuciones; FP/FN), borderline group/regresión (requieren muchos participantes borderline), Angoff (jueces sobre ítems; familia de variantes) y ROC (sensibilidad/especificidad). En simulación quirúrgica el más frecuente es usar media/mediana de experimentados (65/162 = 40%; Pietersen 2021). En endoscopia flexible el precedente directo es FES (n=160; contrasting groups + ROC; sens 0.81, 1-esp 0.21; Vassiliou 2013); en EGD y colonoscopia simuladas se usó contrasting groups con n de 35 y 24 (Nielsen 2022; Jaensch 2023). Para un estándar de logro tras curso (estudio B) conviene un estándar de dominio con criterios conjuntivos de seguridad (Yudkowsky 2015).
+- **P29.** El estudio típico de validación en simulación quirúrgica tiene una media de 37 sujetos y es unicéntrico (Van Nortwick 2010: 83 estudios; Borgersen 2018: 18,312/498 aprox. 37 por estudio, cálculo propio). En endoscopia flexible simulada: 24 (8/8/8; Jaensch 2023), 35 (15/10/10; Nielsen 2022), 30 (15/15; Sun 2026, broncoscopia) hasta 160 (FES). Solo Jaensch menciona "A power calculation was performed" (abstract); no hay fórmula verificada. Con n pequeño reportar FP/FN teóricos y observados (Jørgensen 2018).
+- **P30.** Reportar forma completa del ICC (modelo, tipo, definición) con IC 95% y umbrales 0.5/0.75/0.9 (Koo & Li 2016); G-theory para separar varianza de sujeto, evaluador y ensayo y hacer D-study (Bloch & Norman 2012). Ejemplo de cifras: 6 casos para fiabilidad >0.7 y 10 casos para >0.8 (Sun 2026); test-retest ICC 0.85 con n=11 (Vassiliou 2013). Faltan cifras de nº de evaluadores en endoscopia.
+- **P31.** Marco de elección: Messick (5 fuentes) y Kane (4 inferencias); ocho pasos de Cook & Hatala 2016; Kane: implicaciones es la inferencia más importante (Cook 2015). Solo 6.6% de 498 estudios quirúrgicos usó Messick (Borgersen 2018). Reporte: CONSORT/STROBE con extensiones de simulación (Cheng 2016: 11 y 10 ítems); AERA/APA/NCME [no PubMed, sin PMID] citado vía Jaensch 2023.
+
+## 6. Decisiones del proyecto
+| Decisión del proyecto | Método recomendado | Fuente |
+|---|---|---|
+| Cómo fijar el corte de competencia (estudio A) | Contrasting groups sobre métricas crudas, con ROC/Youden como análisis de sensibilidad; reportar FP/FN observados y teóricos | Jørgensen 2018 (29556423); Vassiliou 2013 (24253562) |
+| Estándar de logro tras el curso (estudio B) | Estándar de dominio con criterios conjuntivos de seguridad (no solo promedio) y grupo de referencia definido por quienes pasan al siguiente nivel | Yudkowsky 2015 (26375263) |
+| Por qué no usar solo media de experimentados | Es lo más frecuente (40%) pero heterogéneo y de evidencia baja-moderada: declarar definición de experto (≥200 procedimientos) y método | Pietersen 2021 (34520423) |
+| Angoff / borderline | Solo para ítems de escala global (GAGES/OSATS) si se requiere; borderline exige n grande | Sridharan 2025 (41466255); Jørgensen 2018 |
+| Tamaño muestral | Referencia: mediana de práctica ~24-37 por estudio; justificar con cálculo propio (stats-agent) y reconocer limitación; no hay fórmula validada en la literatura recuperada | Van Nortwick 2010 (20015529); Jaensch 2023 (37563741) |
+| ICC del criterio externo (GAGES) | Declarar forma de ICC, IC 95% y umbrales; G-study/D-study para decidir nº de evaluadores y de ensayos | Koo & Li 2016 (27330520); Bloch & Norman 2012 (23140303); Sun 2026 (41963810) |
+| Marco de validez | Messick (5 fuentes) con argumento Kane (implicaciones para el corte); ocho pasos | Cook & Hatala 2016 (29450000); Cook 2015 (25989405) |
+| Guía de reporte | STROBE (estudio A) / CONSORT o STROBE (estudio B) con extensiones de simulación | Cheng 2016 (27465839) |
+
 
 ---
 

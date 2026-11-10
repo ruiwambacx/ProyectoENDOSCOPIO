@@ -1,0 +1,74 @@
+# Matriz parcial Q8 — Standard setting, tamaño muestral, confiabilidad y marcos de validez (P28–P31)
+Fecha de búsqueda: 2026-11-10. Fuentes: PubMed (conector MCP; PMID/DOI verificados con get_article_metadata) y Consensus (solo descubrimiento; todo lo incluido se verificó luego en PubMed). Lectura: solo abstract, salvo 29556423 (texto completo PMC5845294). get_full_text_article se intentó solo en 29556423; los demás prioritarios con PMC (29450000, 41466255, 35692913) no se leyeron a texto completo. Texto fuente de verificación en `05_papers/texto/<PMID>.txt`.
+
+## 1. Queries usadas
+| # | Cadena | Resultados |
+|---|---|---|
+| 1 | ("standard setting" OR "cut score" OR "passing score" OR "contrasting groups" OR "borderline group" OR Angoff) AND (procedural OR "technical skills" OR simulation OR OSCE OR endoscopy) | 1631 (solo 25 IDs, sin títulos; no triable) |
+| 2 | Idem con ("standard setting"/"cut score"/"passing score"/"contrasting groups"/"borderline group") AND ("technical skills" OR simulation OR endoscopy) AND (review OR guide OR method) | 245 (20 IDs recientes; sin títulos; no triable) |
+| 3 | ("sample size" OR power) AND "construct validity" AND (simulator OR simulation) | 36 (20 IDs; sin títulos; no triable; se triaron por Consensus) |
+| 4 | ("intraclass correlation" OR "generalizability theory" OR "G-study") AND ("technical skills" OR "global rating" OR OSATS OR endoscopy) AND (raters OR assessors) | 264 (20 IDs recientes; no triable) |
+| 5 | (Messick OR Kane) AND validity AND (simulation OR "health professions education") | 199 (20 IDs recientes; no triable) |
+| 6 | (endoscopy OR colonoscopy OR gastroscopy) AND simulator AND ("pass/fail" OR "passing score" OR "cut-off" OR "contrasting groups" OR "proficiency level" OR benchmark) AND validity (relevancia) | 119 (15 IDs listados) |
+| 7-14 | Búsquedas por título/autor para verificar PMID de: Cook 2016, Cook 2015, Cheng 2016, Jørgensen 2018, Yudkowsky 2015, Bloch & Norman 2012, Pietersen 2021, Sridharan 2025, Vassiliou 2013, Nielsen 2022, Jaensch 2023, Van Nortwick 2010, Borgersen 2018, Koo & Li 2016, Sun 2026 | 1-3 c/u (Van Nortwick solo apareció con filtro de año 2010) |
+| C1 | Consensus: standard setting methods pass/fail cut-off technical skills simulation contrasting groups borderline Angoff | 10 |
+| C2 | Consensus: sample size justification construct validity studies surgical simulators novices experts systematic review | 12 |
+| C3 | Consensus: endoscopy simulator pass/fail standard setting contrasting groups proficiency criteria validity evidence | 10 |
+
+Nota: la búsqueda PubMed por cadenas amplias devuelve IDs sin títulos y ordenados por fecha; no son triables. Por eso los candidatos salieron de Consensus y de búsquedas por título, siempre verificados en PubMed.
+
+## 2. Matriz
+| Pregunta | Paper (autor, año) | PMID / DOI | Fuente | Qué responde | Frase textual | Calidad | Verificado en | Sección destino |
+|---|---|---|---|---|---|---|---|---|
+| P28 | Jørgensen 2018 (prioritario) | 29556423 / 10.1186/s41077-018-0064-7 | PubMed | Contrasting groups: corte = intersección de dos curvas normales; reportar FP/FN teóricos además de observados; borderline pide n grande | "In such cases, borderline-based methods are more feasible, but this method often requires big sample sizes before ‘enough’ trainees are judged as borderline." | Moderada-alta | Texto completo PMC | Métodos (estándar), Discusión |
+| P28 | Pietersen 2021 (prioritario) | 34520423 / 10.1097/SLA.0000000000005209 | PubMed | 162 estudios de standard setting en simulación quirúrgica; 40% usa media/mediana de experimentados | "Most studies described how the standard setting was determined (N = 147, 91%) and most used the mean or median performance score of experienced surgeons (n = 65, 40%) for standard setting." | Alta | Abstract | Introducción, Discusión |
+| P28 | Vassiliou 2013 (prioritario) | 24253562 / 10.1007/s00464-013-3298-4 | PubMed | FES: corte por contrasting groups + ROC, sens 0.81 / 1-esp 0.21, n=160 | "Passing scores were determined by a contrasting groups methodology and use of receiver operating characteristic curves." | Alta | Abstract | Métodos, Discusión |
+| P28 | Yudkowsky 2015 | 26375263 / 10.1097/ACM.0000000000000887 | PubMed | En mastery learning redefinir el borderline; conjuntivos de seguridad | "Patient safety considerations support conjunctive standards for key knowledge and skill subdomains and for items that have an impact on clinical outcomes." | Alta | Abstract | Métodos (estándar B) |
+| P28 | Sridharan 2025 | 41466255 / 10.1186/s12909-025-08300-6 | PubMed | Angoff es una familia de métodos; resultados dependen de la variante | "Therefore, selecting a specific Angoff variant must be a conscious decision aligned with the assessment's purpose and context." | Moderada | Abstract | Discusión (por qué no Angoff) |
+| P28 | Nielsen 2022 | 35692913 / 10.1055/a-1814-9747 | PubMed | EGD en simulador, contrasting groups, corte todo-o-nada | "A pass/fail standard was established requiring identification of all landmarks and performance of the TSP in < 5 minutes." | Moderada | Abstract | Discusión (comparación) |
+| P28, P29 | Jaensch 2023 | 37563741 / 10.1186/s41077-023-00260-5 | PubMed | Colonoscopia GI Mentor: n=8/8/8, cálculo de potencia, corte 17.1; experto vs intermedio no significativo | "Although expert endoscopists had a higher score, the difference was not statistically significant (p=0.40)." (ficha existente) | Moderada | Abstract | Métodos / Discusión |
+| P28, P30 | Sun 2026 | 41963810 / 10.1186/s12871-026-03809-9 | PubMed | Broncoscopia flexible: Messick + G-theory (6 casos >0.7; 10 casos >0.8) + contrasting groups (34.4%) | "Generalizability theory analyses found that six cases were required for formative assessment (reliability > 0.7) and 10 cases were required for summative assessment (reliability > 0.8)." | Moderada | Abstract | Métodos (ensayos por sujeto) |
+| P29 | Van Nortwick 2010 (prioritario) | 20015529 / 10.1016/j.surg.2009.10.068 | PubMed | Estudio típico: unicéntrico, media de 37 sujetos, 45% reporta confiabilidad | "Most studies (82%) were conducted in a single institution with a mean of 37 subjects recruited." | Moderada (antigua) | Abstract | Métodos (n), Discusión |
+| P29, P31 | Borgersen 2018 | 29303808 / 10.1097/SLA.0000000000002652 | PubMed | 498 estudios/18,312 participantes; solo 6.6% usa Messick | "Only 6.6% of the studies used the recommended contemporary validity framework (Messick)." | Alta | Abstract | Introducción |
+| P30 | Koo & Li 2016 | 27330520 / 10.1016/j.jcm.2016.02.012 | PubMed | Elegir y reportar la forma del ICC; umbrales por IC 95% | "Based on the 95% confident interval of the ICC estimate, values less than 0.5, between 0.5 and 0.75, between 0.75 and 0.9, and greater than 0.90 are indicative of poor, moderate, good, and excellent reliability, respectively." | Alta (práctica) | Abstract | Métodos (análisis) |
+| P30 | Bloch & Norman 2012 | 23140303 / 10.3109/0142159X.2012.703791 | PubMed | G-theory y D-study para planear evaluadores/ensayos | "In G theory, various sources of error contributing to the inaccuracy of measurement are explored." | Alta | Abstract | Métodos (plan de confiabilidad) |
+| P30 | Vassiliou 2013 | 24253562 | PubMed | Test-retest ICC 0.85 en n=11 | "Test-retest reliability was assessed in 11 participants, and the intraclass correlation was 0.85." | Alta | Abstract | Métodos |
+| P31 | Cook & Hatala 2016 (prioritario) | 29450000 / 10.1186/s41077-016-0033-y | PubMed | Messick y Kane; ocho pasos de validación | "A framework proposed by Messick identifies potential evidence sources: content, response process, internal structure, relationships with other variables, and consequences." | Alta | Abstract | Métodos (marco), Discusión |
+| P31 | Cook 2015 | 25989405 / 10.1111/medu.12678 | PubMed | Kane: cuatro inferencias; implicaciones = la más importante | "The Implications and associated decisions are the most important inferences in the validity argument." | Alta | Abstract | Métodos |
+| P31 | Cheng 2016 (prioritario) | 27465839 / 10.1097/SIH.0000000000000150 | PubMed | Extensiones simulación de CONSORT (11) y STROBE (10) | "We have developed extensions for the CONSORT and STROBE Statements that can help improve the quality of reporting for SBR." | Alta | Abstract | Métodos (reporte) |
+
+Duplicado: Cheng 2016 existe también como PMID 29449994 (Adv Simul, PMC5806464, DOI 10.1186/s41077-016-0025-y); citar una sola versión.
+
+## 3. Evidencia contraria / limitaciones
+- Contrasting groups depende de grupos bien separados y con n suficiente; con n pequeño los FP/FN observados son inestables (Jørgensen 2018: FP observado 9.1% vs teórico 2.7%; FN 0.0% vs 6.4% en un estudio de colonoscopia).
+- Corte demasiado estricto: Nielsen 2022 EGD, ningún intermedio aprobó; Jaensch 2023, 3 expertos y 3 intermedios reprobaron y 1 novato aprobó; la diferencia experto vs intermedio no fue significativa (p=0.40), con n=8 por grupo.
+- Pietersen 2021: considerable heterogeneidad y evidencia baja-moderada en standard setting de simulación; "experto" se define de forma inconsistente.
+- Angoff: resultados dependientes de la variante (Sridharan 2025); además requiere jueces e ítems; poco aplicable a métricas crudas continuas.
+- Van Nortwick 2010 y Borgersen 2018: la práctica dominante es unicéntrica, n pequeño, sin justificar n y sin marco moderno.
+
+## 4. Gaps
+- No se encontró (y no se verificó) ningún método formal de cálculo de tamaño muestral específico para estudios de validación de constructo con simuladores; la evidencia es descriptiva (rangos de n), no prescriptiva. Cálculo muestral propio debe hacerse con stats-agent (p. ej., contraste Kruskal/Mann-Whitney para tamaño de efecto esperado; ICC con intervalo de precisión).
+- No se verificó cuántos evaluadores/ensayos requiere GAGES/OSATS en endoscopia (solo Sun 2026 en broncoscopia: 6-10 casos). Falta una G-study con evaluadores humanos en endoscopia.
+- Hofstee y borderline regression: solo hay candidatos por Consensus sin PMID verificado en PubMed (Dwyer 2016 BMC Med Educ, Tappan 2025 Clin Teach, Allahyari 2026 J Vet Med Educ, Vamadevan 2026 Surg Endosc con contrasting groups y Mikoto). No se incluyeron en fichas.
+- Montbrun (OSATS, contrasting groups vs borderline) y Goldenberg (revisión de estándares absolutos) se citan dentro de Jørgensen 2018 pero no se buscaron ni verificaron en PubMed.
+- [no PubMed, sin PMID] Standards for Educational and Psychological Testing (AERA/APA/NCME): no es artículo indexado; su uso como base de validación se verifica en Jaensch 2023 (PMID 37563741: "The validation process was conducted based on the Standards for Educational and Psychological Testing"). Libros de Downing/Yudkowsky: no se incluyen; no hay PMID.
+- GRRAS (reporte de estudios de confiabilidad/acuerdo, Kottner 2011): el artículo original no se verificó; solo apareció Gerke 2018 (PMID 30249982) que lo discute, no incluido.
+- No se localizaron extensiones de reporte de simulación específicas para estudios de validación (más allá de CONSORT/STROBE-SBR).
+
+## 5. Síntesis por pregunta
+- **P28.** Métodos: grupos contrastantes (participante-céntrico; intersección de distribuciones; FP/FN), borderline group/regresión (requieren muchos participantes borderline), Angoff (jueces sobre ítems; familia de variantes) y ROC (sensibilidad/especificidad). En simulación quirúrgica el más frecuente es usar media/mediana de experimentados (65/162 = 40%; Pietersen 2021). En endoscopia flexible el precedente directo es FES (n=160; contrasting groups + ROC; sens 0.81, 1-esp 0.21; Vassiliou 2013); en EGD y colonoscopia simuladas se usó contrasting groups con n de 35 y 24 (Nielsen 2022; Jaensch 2023). Para un estándar de logro tras curso (estudio B) conviene un estándar de dominio con criterios conjuntivos de seguridad (Yudkowsky 2015).
+- **P29.** El estudio típico de validación en simulación quirúrgica tiene una media de 37 sujetos y es unicéntrico (Van Nortwick 2010: 83 estudios; Borgersen 2018: 18,312/498 aprox. 37 por estudio, cálculo propio). En endoscopia flexible simulada: 24 (8/8/8; Jaensch 2023), 35 (15/10/10; Nielsen 2022), 30 (15/15; Sun 2026, broncoscopia) hasta 160 (FES). Solo Jaensch menciona "A power calculation was performed" (abstract); no hay fórmula verificada. Con n pequeño reportar FP/FN teóricos y observados (Jørgensen 2018).
+- **P30.** Reportar forma completa del ICC (modelo, tipo, definición) con IC 95% y umbrales 0.5/0.75/0.9 (Koo & Li 2016); G-theory para separar varianza de sujeto, evaluador y ensayo y hacer D-study (Bloch & Norman 2012). Ejemplo de cifras: 6 casos para fiabilidad >0.7 y 10 casos para >0.8 (Sun 2026); test-retest ICC 0.85 con n=11 (Vassiliou 2013). Faltan cifras de nº de evaluadores en endoscopia.
+- **P31.** Marco de elección: Messick (5 fuentes) y Kane (4 inferencias); ocho pasos de Cook & Hatala 2016; Kane: implicaciones es la inferencia más importante (Cook 2015). Solo 6.6% de 498 estudios quirúrgicos usó Messick (Borgersen 2018). Reporte: CONSORT/STROBE con extensiones de simulación (Cheng 2016: 11 y 10 ítems); AERA/APA/NCME [no PubMed, sin PMID] citado vía Jaensch 2023.
+
+## 6. Decisiones del proyecto
+| Decisión del proyecto | Método recomendado | Fuente |
+|---|---|---|
+| Cómo fijar el corte de competencia (estudio A) | Contrasting groups sobre métricas crudas, con ROC/Youden como análisis de sensibilidad; reportar FP/FN observados y teóricos | Jørgensen 2018 (29556423); Vassiliou 2013 (24253562) |
+| Estándar de logro tras el curso (estudio B) | Estándar de dominio con criterios conjuntivos de seguridad (no solo promedio) y grupo de referencia definido por quienes pasan al siguiente nivel | Yudkowsky 2015 (26375263) |
+| Por qué no usar solo media de experimentados | Es lo más frecuente (40%) pero heterogéneo y de evidencia baja-moderada: declarar definición de experto (≥200 procedimientos) y método | Pietersen 2021 (34520423) |
+| Angoff / borderline | Solo para ítems de escala global (GAGES/OSATS) si se requiere; borderline exige n grande | Sridharan 2025 (41466255); Jørgensen 2018 |
+| Tamaño muestral | Referencia: mediana de práctica ~24-37 por estudio; justificar con cálculo propio (stats-agent) y reconocer limitación; no hay fórmula validada en la literatura recuperada | Van Nortwick 2010 (20015529); Jaensch 2023 (37563741) |
+| ICC del criterio externo (GAGES) | Declarar forma de ICC, IC 95% y umbrales; G-study/D-study para decidir nº de evaluadores y de ensayos | Koo & Li 2016 (27330520); Bloch & Norman 2012 (23140303); Sun 2026 (41963810) |
+| Marco de validez | Messick (5 fuentes) con argumento Kane (implicaciones para el corte); ocho pasos | Cook & Hatala 2016 (29450000); Cook 2015 (25989405) |
+| Guía de reporte | STROBE (estudio A) / CONSORT o STROBE (estudio B) con extensiones de simulación | Cheng 2016 (27465839) |

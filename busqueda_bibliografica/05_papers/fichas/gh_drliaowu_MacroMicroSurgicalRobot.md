@@ -1,0 +1,13 @@
+# gh_drliaowu_MacroMicroSurgicalRobot — Scott/Liu/Wu (UNSW), 2024. Repositorio GitHub MacroMicroSurgicalRobot. https://github.com/drliaowu/MacroMicroSurgicalRobot [no PubMed, sin PMID]
+- Prioritario: no · Lectura: página del repositorio + README (no se abrieron los STL) · Fuente: Web
+- Acceso: URL https://github.com/drliaowu/MacroMicroSurgicalRobot (accedido 2026-11-10) | DOI: no | PMC: sin PMC | Open access: sí (acceso público) | Archivo sugerido: n/a | Licencia: **no declarada** (la API de GitHub devuelve license=null; la página no muestra archivo LICENSE) → sin licencia explícita, todos los derechos reservados por defecto; pedir permiso antes de reutilizar.
+- Diseño/tipo: paquete ROS + CAD de la micro-punta continua descrita en arxiv_2405.16084.
+- Contenido (API GitHub): PartsList.pdf (lista de partes, contenido no leído); meshes/ con distal_module.stl, end_effector.stl, pd_adaptor_module.stl, proximal_base.stl, proximal_module.stl, tube_base.stl; carpetas include, launch, rviz, src, urdf. Último commit 2024-02-09; 55 commits.
+- Costo declarado: AUD 252,28 (en el artículo).
+- Hallazgos: CAD (STL) y BOM (PDF) existen; no hay mango ni ruedas de endoscopio.
+- Limitaciones: sin licencia; el contenido del PartsList.pdf no se verificó.
+- Utilidad para el proyecto (1-5): 2
+- Calidad: repositorio de laboratorio académico, mantenimiento detenido desde 2024 (estimación).
+- Frases textuales:
+  - "ROS package providing simultaneous teleoperation of a custom micro-manipulator and a Universal Robots UR5e robotic arm via a 3D Systems Touch haptic stylus."
+- Responde a: P18, P21

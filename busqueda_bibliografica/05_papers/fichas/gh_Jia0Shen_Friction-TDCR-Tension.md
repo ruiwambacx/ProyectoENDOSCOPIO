@@ -1,0 +1,11 @@
+# gh_Jia0Shen_Friction-TDCR-Tension — Shen J, Browne et al., 2026. Friction Modeling of Tendon-driven Continuum Robots through Linear Complementarity Problem. IEEE Robot Autom Lett [no PubMed, sin PMID]. DOI 10.1109/lra.2026.3688094 · https://github.com/Jia0Shen/Friction-TDCR-Tension
+- Prioritario: no · Lectura: solo abstract (Consensus) + README del repo · Fuente: Consensus/Web
+- Acceso: DOI https://doi.org/10.1109/lra.2026.3688094 (doi.org respondió 302 a IEEE Xplore el 2026-11-10; DOI obtenido de Crossref, no del conector Consensus) | PMC: sin PMC | Open access: desconocido | Archivo sugerido: gh_Jia0Shen_2026.pdf | Licencia del repo: **no declarada** (sin archivo LICENSE en la página; API license vacía). Último commit 2026-05-13 ("Add paper citation"). Contiene solo código MATLAB (sin CAD ni BOM).
+- Diseño/tipo: modelo de fricción tendón-disco (Capstan, problema de complementariedad lineal), validado en prototipo simplificado de 402 mm.
+- Hallazgos principales: error de posición de punta de 36,11 mm (fricción deslizante convencional) a 9,42 mm.
+- Limitaciones: simulación/modelo; sin vida útil; no es dispositivo impreso.
+- Utilidad para el proyecto (1-5): 3 (modelo de la histéresis por fricción tendón-disco, aplicable a caracterizar el banco).
+- Calidad: revista IEEE con código público; evidencia técnica moderada (estimación).
+- Frases textuales:
+  - "We experimentally validated our approach on a simplified TDCR prototype and demonstrated a reduction of tip position error from 36.11 mm in conventional sliding friction models to 9.42 mm for a 402-mm-long robot."
+- Responde a: P19, P21

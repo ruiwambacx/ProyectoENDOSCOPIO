@@ -13,7 +13,8 @@ Proyecto a largo plazo: curso de fundamentos de manipulación bimanual del endos
 | Evidencia: escalas y cortes de experiencia | [docs/02](docs/02-evidencia-escalas-y-cortes.md) |
 | Integración y decisiones | [docs/03](docs/03-proyecto-integrado.md), [docs/06](docs/06-incorporacion-proyecto-integral.md) |
 | Plan de búsqueda y síntesis | [docs/04](docs/04-plan-busqueda-bibliografica.md), [docs/05](docs/05-sintesis-busqueda-y-decisiones.md) |
-| Búsqueda bibliográfica (53 fichas, matriz, referencias) | [busqueda_bibliografica/](busqueda_bibliografica/05_matriz_evidencia.md) |
+| Búsqueda bibliográfica Q1–Q8 (103 fichas, matriz, referencias) | [busqueda_bibliografica/](busqueda_bibliografica/05_matriz_evidencia.md) |
+| Lista de descarga de papers (ingesta manual) | [busqueda_bibliografica/DESCARGAS.md](busqueda_bibliografica/DESCARGAS.md) |
 | Ficha de mediciones en la clínica | [docs/mediciones-clinica.md](docs/mediciones-clinica.md) |
 | Hardware: modelo paramétrico, STL, visor 3D | [hardware/](hardware/README.md) |
 | Cómo ver el prototipo sin programar | [hardware/COMO_VER_EN_ONSHAPE.md](hardware/COMO_VER_EN_ONSHAPE.md) |

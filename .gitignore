@@ -9,3 +9,7 @@ node_modules/
 *.log
 .DS_Store
 Thumbs.db
+
+# PDFs descargados manualmente y textos fuente locales (derechos de autor de terceros)
+papers_pdf/
+busqueda_bibliografica/05_papers/texto/

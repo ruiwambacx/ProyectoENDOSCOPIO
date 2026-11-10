@@ -24,3 +24,25 @@
 - P15 [Q4]: ¿Cuántas EGD requieren los aprendices para alcanzar competencia (Ward 2016 y otros, incluyendo CUSUM)?
 - P16 [Q4]: ¿Cuántas colonoscopias requieren para competencia (Sedlack 2015 y otros)?
 - P17 [Q4]: ¿Cuál es la publicación del grupo UC (Riquelme et al.) sobre DOPS reducido y curva de intubación esofágica (90–100 procedimientos)?
+
+## Q8 — Standard setting, tamaño muestral, confiabilidad y marcos de validez (trazable a docs/04, fila Q8)
+- P28 [Q8]: ¿Qué métodos de standard setting (grupos contrastantes, borderline, Angoff/Hofstee, ROC) se usan para fijar cut-offs de competencia en habilidades procedimentales y cuáles son sus ventajas y limitaciones?
+- P29 [Q8]: ¿Cómo se justifica el tamaño muestral y qué rangos de n se usan en estudios de validación de constructo de simuladores quirúrgicos/endoscópicos?
+- P30 [Q8]: ¿Cómo se calcula y reporta la confiabilidad inter-evaluador (ICC, teoría de la generalizabilidad) y cuántos evaluadores/ensayos se necesitan en evaluación procedimental?
+- P31 [Q8]: ¿Qué marcos de validez (Messick, Kane, estándares AERA/APA/NCME) se recomiendan para simulación en educación de profesiones de la salud, y qué guías de reporte aplican (STROBE, CONSORT, extensiones de simulación)?
+
+## Q7 — Transferencia al paciente real y retención (alcance realista del simulador)
+- P25 [Q7]: ¿El entrenamiento en simuladores (VR, físicos, híbridos) mejora el desempeño en procedimientos reales de EGD y colonoscopia (independencia, tiempo, éxito, puntaje) y con qué diseño/comparador (ECA, controlado)?
+- P26 [Q7]: ¿Se ha demostrado transferencia con simuladores físicos de bajo costo o solo con VR?
+- P27 [Q7]: ¿Qué se sabe de retención de habilidades tras el entrenamiento simulado (seguimiento ≥2 semanas) y qué tareas de transferencia cercana (tarea nueva, instrumento real fuera de uso) se han usado?
+
+## Q6 — Gamificación, retroalimentación automatizada y diseño de práctica (trazable a docs/04, fila Q6)
+- P22 [Q6]: ¿La gamificación o los puntajes/rankings en simuladores de endoscopia o procedimientos mejoran aprendizaje o retención, y con qué efectos adversos (p. ej. varianza irrelevante por aprender el juego, premiar velocidad)?
+- P23 [Q6]: ¿Qué evidencia hay de retroalimentación automatizada (métricas del simulador, IA, video) frente a retroalimentación de tutor en endoscopia/procedimientos?
+- P24 [Q6]: ¿Qué dice la evidencia sobre práctica distribuida vs masiva, número de sesiones y retención en entrenamiento endoscópico simulado (incluye contraste con el diseño del curso piloto: 6 sesiones de 45-60 min, retención a 2-4 semanas)?
+
+## Q5 — Diseños de mango, transmisión por tendones y puntas articuladas de bajo costo/impresas en 3D (trazable a docs/04, fila Q5)
+- P18 [Q5]: ¿Qué diseños abiertos/impresos de mango y ruedas de endoscopio existen (diámetro, materiales, costo, documentación CAD/BOM)?
+- P19 [Q5]: ¿Qué mecanismos de punta articulada por tendones de bajo costo (continuum/bending sections) reportan fricción, histéresis (incluida la fricción con tubo/funda curvada), fuerza de tendón y vida útil?
+- P20 [Q5]: ¿Qué sensores (encoder magnético, óptico, potenciómetro, etc.) se usan para medir las ruedas/angulación en simuladores o dispositivos hápticos de endoscopia?
+- P21 [Q5]: ¿Bajo qué licencias están publicados los diseños abiertos hallados (reutilización)?

@@ -1,0 +1,14 @@
+# arxiv_2405.16084 — Scott L, Liu T, Wu L, 2024. A Low-Cost Teleoperable Surgical Robot with a Macro-Micro Structure and a Continuum Tip for Open-Source Research. arXiv (cs.RO) [no PubMed, sin PMID]. https://arxiv.org/abs/2405.16084
+- Prioritario: sí · Lectura: completa (texto alphaXiv) · Fuente: alphaXiv/Web
+- Acceso: URL https://arxiv.org/abs/2405.16084 (HTTP 200, accedido 2026-11-10) | DOI: no declarado | PMC: sin PMC | Open access: sí (arXiv) | Archivo sugerido: arxiv_2405.16084_Scott2024.pdf | Licencia: del artículo no verificada; del repo asociado ver ficha gh_drliaowu_MacroMicroSurgicalRobot (no declarada)
+- Diseño/tipo: prototipo de ingeniería, manipulador continuo por tendones con nodos de rodadura impresos (SLA) y poleas FDM; verificado con tracker electromagnético.
+- Descripción técnica: punta continua de 20 mm de largo y 4 mm de diámetro sobre tubo de acero de 250 mm; 5 nodos de rodadura; canales de tendón de 0,5 mm; lumen central 2 mm; poleas FDM (Ender 3) con anclaje M3 que permite ajustar la tensión del tendón; control con Arduino Mega y servos.
+- Costo declarado: AUD 252,28 (módulo micro).
+- Hallazgos principales: error absoluto medio de posición medido con Aurora 0,0272 mm y 0,0161 mm (dos grupos de ensayos); latencia ocasional y vibraciones del brazo reportadas; sin datos de fricción, histéresis ni vida útil.
+- Limitaciones: es un robot teleoperado, no un mango manual; sin histéresis ni durabilidad; tubo rígido (sin curvatura); recambio de la punta descrito como complicado.
+- Utilidad para el proyecto (1-5): 3 (referencia de punta/poleas impresas de bajo costo y de repo abierto con CAD).
+- Calidad: prototipo con validación metrológica limitada; evidencia técnica baja-moderada (estimación).
+- Frases textuales:
+  - "The estimated total cost of the micro manipulator assembly is $252.28 AUD."
+  - "This simple mechanism facilitates the adjustment of tendon tension after assembly while fixing tendons in place during operation."
+- Responde a: P18, P19, P21
